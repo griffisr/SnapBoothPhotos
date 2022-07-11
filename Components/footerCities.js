@@ -70,6 +70,7 @@
                   <ul>
                     <li><a href="/RatesAvailability.html">Contact</a></li>
                     <li> <a href="/FAQs.html">FAQ</a> </li>
+                    <li> <a href="/cities.html">Cities We Serve</a> </li>
                   </ul>
                 </div>
               </div>
@@ -89,7 +90,7 @@
                 <p>
                   Snap Booth Photos<br />
                   Milan, MI 48160<br />
-                  <a href="tel:">(734) 478-6298</a>
+                  <a href="tel:">(734) 707-7794</a>
                 </p>
 
                 </div>

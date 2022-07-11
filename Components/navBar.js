@@ -203,7 +203,7 @@
             <div class="col-sm-6 col-md-6 text-right clearfix">
               <div class="fl-page-bar-text fl-page-bar-text-2">
                 <div style="font-size:120%">
-                  <strong>Call or TXT: <a href="tel:1-734-236-1600">(xxx) xxx-xxxx</a></strong>
+                  <strong>Call or TXT: <a href="tel:1-734-707-7794">(xxx) xxx-xxxx</a></strong>
                 </div>
               </div>
             </div>		

@@ -173,13 +173,13 @@
       
                     <div class="fl-page-nav-collapse collapse navbar-collapse">
                       <ul id="menu-maintop" class="nav navbar-nav navbar-right menu fl-theme-menu">
-                        <li id="menu-item-24403" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24403 nav-item"><a href="RatesAvailability.html" class="nav-link">Request Quote</a></li>
-                        <li id="menu-item-24645" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="photo-booth-rental-guide.html" class="nav-link">Rental Guide</a></li>
+                        <li id="menu-item-24403" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24403 nav-item"><a href="../RatesAvailability.html" class="nav-link">Request Quote</a></li>
+                        <li id="menu-item-24645" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="../photo-booth-rental-guide.html" class="nav-link">Rental Guide</a></li>
       
-                        <li id="menu-item-24402" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24402 nav-item"><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                        <li id="menu-item-24402" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24402 nav-item"><a href="../testimonials.html" class="nav-link">Testimonials</a></li>
       
                         <!--Dropdown-->
-                        <li id="menu-item-24404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="FAQs.html" class="nav-link">FAQs</a></li>
+                        <li id="menu-item-24404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="../FAQs.html" class="nav-link">FAQs</a></li>
                       </ul>							
                     </div>
                   </nav>
@@ -203,7 +203,7 @@
             <div class="col-sm-6 col-md-6 text-right clearfix">
               <div class="fl-page-bar-text fl-page-bar-text-2">
                 <div style="font-size:120%">
-                  <strong>Call or TXT: <a href="tel:1-734-236-1600">(xxx) xxx-xxxx</a></strong>
+                  <strong>Call or TXT: <a href="tel:1-734-707-7794">(xxx) xxx-xxxx</a></strong>
                 </div>
               </div>
             </div>		
@@ -221,7 +221,7 @@
        
               <div class="col-sm-12 col-md-4 fl-page-header-logo-col">
                 <div class="fl-page-header-logo" itemscope="itemscope" itemtype="https://schema.org/Organization">
-                  <a href="index.html" itemprop="url"><img  src="../Images/Logos/sbpLogo.png" title="" alt="Snap Booth Photos" style="width: 70%;"/></a>	
+                  <a href="../index.html" itemprop="url"><img  src="../Images/Logos/sbpLogo.png" title="" alt="Snap Booth Photos" style="width: 70%;"/></a>	
                 </div>
               </div>
       
@@ -238,11 +238,11 @@
                     <div class="fl-page-nav-collapse collapse navbar-collapse">
                       <ul id="menu-maintop-1" class="nav navbar-nav navbar-right menu fl-theme-menu">
                         
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24403 nav-item"><a href="RatesAvailability.html" class="nav-link">Request Quote</a></li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="photo-booth-rental-guide.html" class="nav-link">Rental Guide</a></li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24402 nav-item"> <a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24403 nav-item"><a href="../RatesAvailability.html" class="nav-link">Request Quote</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="../photo-booth-rental-guide.html" class="nav-link">Rental Guide</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24402 nav-item"> <a href="../testimonials.html" class="nav-link">Testimonials</a></li>
                                   <!--Dropdown-->
-                                  <li id="menu-item-24404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="FAQs.html" class="nav-link">FAQs</a></li>
+                                  <li id="menu-item-24404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="../FAQs.html" class="nav-link">FAQs</a></li>
                       </ul>							
                     </div>
                   </nav>
