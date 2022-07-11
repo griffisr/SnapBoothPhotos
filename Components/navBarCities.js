@@ -41,18 +41,18 @@
       
       <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
       <link rel='stylesheet' type="text/css" href='../CSS/tiledPics.css' media='all' />
-      <link rel='stylesheet' id='wp-block-library-css' type="text/css" href='../CSS/wp-includes/css/dist/block-library/style.min.css' media='all' />
-      <link rel='stylesheet' id='wp-block-library-theme-css' type="text/css" href='../CSS/wp-includes/css/dist/block-library/theme.min.css' media='all' />
+      <link rel='stylesheet' id='wp-block-library-css' type="text/css" href='../CSS/wp-includes/../CSS/dist/block-library/style.min.css' media='all' />
+      <link rel='stylesheet' id='wp-block-library-theme-css' type="text/css" href='../CSS/wp-includes/../CSS/dist/block-library/theme.min.css' media='all' />
       <link rel='stylesheet' id='fl-builder-layout-6-css' type="text/css" href='../CSS/wp-content/uploads/bb-plugin/cache/6-layout.css' media='all' />
-      <link rel='stylesheet' id='jquery-magnificpopup-css' type="text/css" href='../CSS/wp-content/plugins/bb-plugin/css/jquery.magnificpopup.min.css' media='all' />
-      <link rel='stylesheet' id='bootstrap-css' type="text/css" href='../CSS/wp-content/themes/bb-theme/css/bootstrap.min.css' media='all' />
+      <link rel='stylesheet' id='jquery-magnificpopup-css' type="text/css" href='../CSS/wp-content/plugins/bb-plugin/../CSS/jquery.magnificpopup.min.css' media='all' />
+      <link rel='stylesheet' id='bootstrap-css' type="text/css" href='../CSS/wp-content/themes/bb-theme/../CSS/bootstrap.min.css' media='all' />
       <link rel='stylesheet' id='fl-automator-skin-css'  href='../CSS/wp-content/uploads/bb-theme/skin-60abfa396f860.css' media='all' />
-      <link rel='stylesheet' id='pp-animate-css'  href='../CSS/wp-content/plugins/bbpowerpack/assets/css/animate.min.css' media='all' />
+      <link rel='stylesheet' id='pp-animate-css'  href='../CSS/wp-content/plugins/bbpowerpack/assets/../CSS/animate.min.css' media='all' />
       <link rel='stylesheet' id='fl-builder-google-fonts-a0a4696f98041565d38c5d58390b2ea5-css'  href='//fonts.googleapis.com/css?family=Raleway%3A300%2C400%2C700%7CYanone+Kaffeesatz%3A400&#038;ver=5.7.6' media='all' />
       <link rel='stylesheet' id='foundation-icons-css'  href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css?ver=2.4.2.2' media='all' />
       
-      <script src='../JS/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
-      <script src='../JS/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+      <script src='../JS/wp-includes/../JS/jquery/jquery.min.js' id='jquery-core-js'></script>
+      <script src='../JS/wp-includes/../JS/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
       
       
       <link rel="canonical" href="http://snapboothphotos.com/" />
@@ -61,7 +61,7 @@
       
       <style id="wp-custom-css">
       /*
-       add  ../CSS here.
+       add  CSS here.
       *
       *
       *
@@ -127,7 +127,7 @@
       
       
       /*
-      ../CSS Migrated from BB theme:
+      CSS Migrated from BB theme:
       */
       
       /* Remove the bottom border from the header
@@ -173,13 +173,13 @@
       
                     <div class="fl-page-nav-collapse collapse navbar-collapse">
                       <ul id="menu-maintop" class="nav navbar-nav navbar-right menu fl-theme-menu">
-                        <li id="menu-item-24403" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24403 nav-item"><a href="../RatesAvailability.html" class="nav-link">Request Quote</a></li>
-                        <li id="menu-item-24645" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="../photo-booth-rental-guide.html" class="nav-link">Rental Guide</a></li>
+                        <li id="menu-item-24403" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24403 nav-item"><a href="RatesAvailability.html" class="nav-link">Request Quote</a></li>
+                        <li id="menu-item-24645" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="photo-booth-rental-guide.html" class="nav-link">Rental Guide</a></li>
       
+                        <li id="menu-item-24402" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24402 nav-item"><a href="testimonials.html" class="nav-link">Testimonials</a></li>
       
-                        <li id="menu-item-24402" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24402 nav-item"><a href="../ClientGalleries.html" class="nav-link">Client Galleries</a></li>
                         <!--Dropdown-->
-                        <li id="menu-item-24404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="../FAQs.html" class="nav-link">FAQs</a></li>
+                        <li id="menu-item-24404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="FAQs.html" class="nav-link">FAQs</a></li>
                       </ul>							
                     </div>
                   </nav>
@@ -221,7 +221,7 @@
        
               <div class="col-sm-12 col-md-4 fl-page-header-logo-col">
                 <div class="fl-page-header-logo" itemscope="itemscope" itemtype="https://schema.org/Organization">
-                  <a href="../index.html" itemprop="url"><img  src="../Images/Logos/sbpLogo.png" title="" alt="Snap Booth Photos" style="width: 70%;"/></a>	
+                  <a href="index.html" itemprop="url"><img  src="../Images/Logos/sbpLogo.png" title="" alt="Snap Booth Photos" style="width: 70%;"/></a>	
                 </div>
               </div>
       
@@ -238,11 +238,11 @@
                     <div class="fl-page-nav-collapse collapse navbar-collapse">
                       <ul id="menu-maintop-1" class="nav navbar-nav navbar-right menu fl-theme-menu">
                         
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24403 nav-item"><a href="../RatesAvailability.html" class="nav-link">Request Quote</a></li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="../photo-booth-rental-guide.html" class="nav-link">Rental Guide</a></li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24402 nav-item"> <a href="../ClientGalleries.html" class="nav-link">Client Galleries</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24403 nav-item"><a href="RatesAvailability.html" class="nav-link">Request Quote</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="photo-booth-rental-guide.html" class="nav-link">Rental Guide</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24402 nav-item"> <a href="testimonials.html" class="nav-link">Testimonials</a></li>
                                   <!--Dropdown-->
-                                  <li id="menu-item-24404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="../FAQs.html" class="nav-link">FAQs</a></li>
+                                  <li id="menu-item-24404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="FAQs.html" class="nav-link">FAQs</a></li>
                       </ul>							
                     </div>
                   </nav>

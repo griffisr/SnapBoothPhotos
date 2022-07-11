@@ -18,7 +18,7 @@
 <!-- .fl-page-content -->
 
 
-<link rel="stylesheet" id="fl-builder-layout-24416-css" href="../../CSS/wp-content/uploads/bb-plugin/cache/24416-layout-partial.css" media="all"/>
+<link rel="stylesheet" id="fl-builder-layout-24416-css" href="../CSS/wp-content/uploads/bb-plugin/cache/24416-layout-partial.css" media="all"/>
 
 
 <!-----------Start Big Middle Footer----------------->
@@ -68,14 +68,8 @@
                   <!--Site Links-->
                   <h4>Links</h4>
                   <ul>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="photo-booth-video.html">Videos</a></li>
-                    <li><a href="http://galleries.snapfuze.com/">Gallery</a></li>
-                    <li><a href="">Ideas</a></li>  <!--Similar to guide-->
-                    <li> <a href="FAQ.html">FAQ</a> </li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
-                    <li><a href="privacy-policy.html">Privacy</a></li>
+                    <li><a href="/RatesAvailability.html">Contact</a></li>
+                    <li> <a href="/FAQs.html">FAQ</a> </li>
                   </ul>
                 </div>
               </div>
@@ -94,7 +88,6 @@
                 <h4>Reach Out</h4>
                 <p>
                   Snap Booth Photos<br />
-                  <br />
                   Milan, MI 48160<br />
                   <a href="tel:">(734) 478-6298</a>
                 </p>

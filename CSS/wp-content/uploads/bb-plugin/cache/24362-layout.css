@@ -20,6 +20,7 @@
   display: table;
   content: " ";
 }
+
 .fl-row:after,
 .fl-row-content:after,
 .fl-col-group:after,
@@ -1493,42 +1494,55 @@ img.mfp-img {
   display: block;
 }
 .fl-node-58f61b7202a7d .pp-dual-button-content .pp-dual-button-1 a.pp-button {
-  background-color: #27b5ba;
+  background-color: #D6B074;
   color: #ffffff;
   position: relative;
   vertical-align: middle;
 }
+
+
+/*Button 1 color hover ************************************************************************/
 .fl-node-58f61b7202a7d
   .pp-dual-button-content
   .pp-dual-button-1
   a.pp-button:hover {
-  background-color: #75d7dc;
-  color: #565656;
-}
+    background-color: #725F3B;
+    color: #ffffff;
+    border-color: #f4f4f4;
+  }
+
+
+
+
 .fl-node-58f61b7202a7d
   .pp-dual-button-content
   .pp-dual-button-1
   a.pp-button:hover
   span {
-  color: #565656;
+  color: #ffffff;
 }
+
+
 .fl-node-58f61b7202a7d .pp-dual-button-content .pp-dual-button-2 a.pp-button {
   background-color: #ffffff;
-  color: #27b5ba;
+  color: #0A3D4D;
 }
+
+
 .fl-node-58f61b7202a7d
   .pp-dual-button-content
   .pp-dual-button-2
   a.pp-button:hover {
-  background-color: #f2efef;
-  color: #565656;
+    background-color: #0A3D4D;
+    color: #ffffff;
+    border-color: #f4f4f4;
 }
 .fl-node-58f61b7202a7d
   .pp-dual-button-content
   .pp-dual-button-2
   a.pp-button:hover
   span {
-  color: #565656;
+    color: #ffffff;
 }
 .fl-node-58f61b7202a7d .pp-dual-button-content a.pp-button .pp-font-icon {
   margin-left: 5px;
@@ -1549,7 +1563,7 @@ img.mfp-img {
 }
 .fl-node-58f61b7202a7d .pp-dual-button-content .pp-dual-button-2 .pp-font-icon {
   font-size: 20px;
-  color: #27b5ba;
+  color: #ba2727;
 }
 .fl-node-58f61b7202a7d
   .pp-dual-button-content
