@@ -1,0 +1,36 @@
+div#FAQquad { 
+    background-color: #000; 
+    font-size: 0; width: 100%; 
+    margin: 0 auto;
+    box-shadow: 0 0 12px rgba(0,0,0,0.8);
+  }
+  div#FAQquad figure { 
+    margin: 0; width: 100%; 
+    height: auto; transition: .5s; 
+    display: inline-block; 
+    position: relative; overflow: hidden; 
+  }
+  div#FAQquad figure:hover { cursor: pointer; z-index: 4; }
+  div#FAQquad figure img { width: 100%; height: auto; }
+  div#FAQquad figure figcaption { 
+    margin: 0; opacity: .5; 
+    background: rgba(0,0,0,0.3); 
+    color: #fff; padding: .3rem; 
+    font-size: 1.9rem; 
+    position: absolute; 
+    bottom: 0; width: 100%;
+      transition: 0s 0s; 
+  }
+  .expanded { transform: scale(1.33); z-index: 5;  }
+  div#quad figure.expanded figcaption { opacity: .8; }
+  div.full figure:not(.expanded) { pointer-events: none; }
+  div#FAQquad { 
+  background-color: #000; 
+  font-size: 0; width: 100%; 
+  margin: 0 auto;
+  box-shadow: 0 0 12px rgba(0,0,0,0.8);
+}
+
+
+
+/*https://codepen.io/dudleystorey/pen/GRJXby*/

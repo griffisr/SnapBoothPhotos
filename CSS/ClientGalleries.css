@@ -1,0 +1,9 @@
+.client_preview_img{
+
+    background-color: rgba(0, 0, 0, 0.367);
+}
+
+    
+.client_preview_img:hover{
+    background-color: rgba(0, 0, 0, 0.461);
+}
