@@ -10,19 +10,12 @@
 <link rel="icon" 
         type="image/png" 
         href="https://cdn-icons-png.flaticon.com/128/3004/3004613.png">
-<title>Snap Booth</title>
+<title>Snap Booth Photos</title>
 
 <meta name='robots' content='max-image-preview:large' />
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
 <link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
-
-
-  <!--Initialize Firebase-->
-  <script src="https://www.gstatic.com/firebasejs/9.8.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.8.0/firebase-database.js"></script>
-
-
 
 
 <script>
@@ -46,6 +39,7 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
 <link rel='stylesheet' type="text/css" href='CSS/tiledPics.css' media='all' />
+<link rel='stylesheet' type="text/css" href='CSS/galleryGrid.css' media='all' />
 <link rel='stylesheet' id='wp-block-library-css' type="text/css" href='CSS/wp-includes/css/dist/block-library/style.min.css' media='all' />
 <link rel='stylesheet' id='wp-block-library-theme-css' type="text/css" href='CSS/wp-includes/css/dist/block-library/theme.min.css' media='all' />
 <link rel='stylesheet' id='fl-builder-layout-6-css' type="text/css" href='CSS/wp-content/uploads/bb-plugin/cache/6-layout.css' media='all' />
@@ -60,6 +54,10 @@
 <script src='JS/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
 <script src='JS/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
 
+
+<!--Initialize Firebase-->
+<script src="https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.8.3/firebase-database.js"></script>
 <script src='JS/Firebase/analytics.js'></script>
 
 
@@ -252,13 +250,7 @@ CSS Migrated from BB theme:
                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="photo-booth-rental-guide.html" class="nav-link">Rental Guide</a></li>
                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24402 nav-item"> <a href="ClientGalleries.html" class="nav-link">Client Galleries</a></li>
                             <!--Dropdown-->
-                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-24404 nav-item"><a href="FAQs.html" class="nav-link">FAQs</a><div class="fl-submenu-icon-wrap"><span class="fl-submenu-toggle-icon"></span></div>
-                            <ul class="sub-menu">
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24408 nav-item"><a href="photo-booth-weddings.html" class="nav-link">Weddings</a></li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24407 nav-item"><a href="photo-booth-parties.html" class="nav-link">Parties</a></li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24409 nav-item"><a href="corporate-rentals.html" class="nav-link">Corporate</a></li>
-                            </ul>
-                          </li>
+                            <li id="menu-item-24404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="FAQs.html" class="nav-link">FAQs</a></li>
                 </ul>							
               </div>
 						</nav>
@@ -330,7 +322,7 @@ CSS Migrated from BB theme:
 	                            <div class="fl-module-content fl-node-content">
 		                            <div class="fl-rich-text">
 	                                <h1>Snap Booth Photos: Photo Booth Rentals</h1>
-                                  <p>Available for all types of events! Snap Booth  Photo Booths are the the perfect fit for weddings, school events, parties, corporate events and so much more! Snap Booth Photos proudly provides photo booths to the MI-OH-IN tri-state area.</p>
+                                  <p>Available for all types of events! Snap Booth  Photo Booths are the perfect fit for weddings, school events, parties, corporate events and so much more! Snap Booth Photos proudly provides photo booths to the MI-OH-IN tri-state area.</p>
                                 </div>
 	                            </div>
                             </div>
@@ -421,8 +413,7 @@ CSS Migrated from BB theme:
                               </div>
                               <div class="pp-sub-heading">
                                 <p>Our photo booths rentals are the perfect
-                                  way to make your event one to remeber. 
-                                  Whether it's a wedding, a birthday celebration, or anything in between, you'll want to capture the memories forever!</p>	
+                                  way to capture the memories of your special day forever!</p>	
                               </div>
 
                             </div>
@@ -436,31 +427,31 @@ CSS Migrated from BB theme:
                         </div>
                   </div>
 
-<!------------------------------------------------------START--------------------------------------------------------------------------------------------------------------------1.3-->
+<!------------------------------------------------------START------------------------------------------------------------------------------------------------- -------------------1.3-->
 
                   <div class="fl-col-group fl-node-58b55495442dd" data-node="58b55495442dd">
 
-                    <div id="quad">
-                      <figure>
-                        <a href="Wedding-Rentals.html">
-                      <img src="Images/GalleryImages/wedding.jpg"></a>
-                      <figcaption>WEDDINGS</figcaption>
-                      </figure>
-                      <figure>
-                        <a href="Party-Rentals.html"></a>
-                        <img src="Images/GalleryImages/party.jpeg" alt></a>
-                        <figcaption>PARTIES</figcaption>
-                      </figure>
-                      <figure>
-                        <a href="Corporate-Rentals.html"></a>
-                        <img src="Images/GalleryImages/img3.jpeg" alt></a>
-                        <figcaption>CORPORATE EVENTS</figcaption>
-                      </figure>
-                      <figure>
-                        <a href="Graduation-Rentals.html"></a>
-                        <img src="Images/GalleryImages/kids.jpg" alt></a>
-                        <figcaption>SO MUCH MORE!</figcaption>
-                      </figure>
+                    <div class="wrapper">
+
+                      <img src="https://images.unsplash.com/photo-1439539698758-ba2680ecadb9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8d2VkZGluZ3x8fHx8fDE2NTY2MTg5MDk&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=600" alt="" class="galleryImg" style="color: rgb(255, 0, 0);">
+                      <img src="https://images.unsplash.com/photo-1504993945773-3f38e1b6a626?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8d2VkZGluZy1wYXJ0eXx8fHx8fDE2NTY2MjAwMDE&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=600" alt="" class="galleryImg imgwrapper">
+                      <img src="https://images.unsplash.com/photo-1534429005880-27f51d95d8ff?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8d2VkZGluZ3x8fHx8fDE2NTY2MTkxNzU&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=600" alt="" class="galleryImg imgwrapper">
+
+
+
+                      <img src="https://images.unsplash.com/photo-1513725673171-537abba17912?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8d2VkZGluZ3x8fHx8fDE2NTY2MTkwNjY&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=600" alt="" class="galleryImg">
+                      <img src="https://images.unsplash.com/photo-1580824456266-c578703e13da?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8d2VkZGluZ3x8fHx8fDE2NTY2MTkyMDg&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=600" alt="" class="galleryImg">
+                      <img src="https://images.unsplash.com/photo-1624067078399-be29c52a2b12?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8d2VkZGluZ3x8fHx8fDE2NTY2MTkxMjk&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=600" alt="" class="galleryImg">
+                      <img src="https://images.unsplash.com/photo-1645497265272-5c92210a18b8?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8cGhvdG9ib290aHx8fHx8fDE2NTY2MTk0OTU&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=600" alt="" class="galleryImg">
+
+                      
+
+                      <img src="https://images.unsplash.com/photo-1562616293-1a11a7816903?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8d2VkZGluZ3x8fHx8fDE2NTY2MTg5NDY&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=600" alt="" class="galleryImg">
+                      <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8d2VkZGluZ3x8fHx8fDE2NTY2MTkwODY&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=600" alt="" class="galleryImg">
+                      <img src="https://images.unsplash.com/photo-1509316554658-04f9287cdb78?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8cGhvdG9ib290aHx8fHx8fDE2NTY2MTk1MTQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=600" alt="" class="galleryImg">
+
+                      
+    
                     </div>
 
                     
@@ -539,7 +530,7 @@ CSS Migrated from BB theme:
                                   <div class="fl-rich-text">
                                     <h3>GREAT FOR EVERYONE!</h3>
                                     <p>When your guests find out there is a photo booth at your event, they're sure to stop by and <i>snap</i> a photo!</p>
-                                    <p>Young to old, all your guest can preserve a memory of your event with help of a photo booth. Everyone can join in on the fun!</p>
+                                    <p>Everyone can join in on the fun! All your guest can preserve a memory of your event with help of a photo booth.</p>
                                     <p>Not only will your guests have a blast snapping photos, they'll get to take the memories home with them and have a keepsake they'll remeber forever. </p>
                                   </div>
                                 </div>
@@ -552,7 +543,7 @@ CSS Migrated from BB theme:
                         <div class="fl-module-content fl-node-content">
                           <div class="fl-photo fl-photo-align-center" itemscope itemtype="https://schema.org/ImageObject">
                         <div class="fl-photo-content fl-photo-img-jpg">
-                              <img loading="lazy" class="fl-photo-img wp-image-24218 size-full" src="Images/2column.jpg" alt="4-panel-sample" itemprop="image" height="450" width="300" title="4-panel-sample"  />
+                              <img loading="lazy" class="fl-photo-img wp-image-24218 size-full" src="Images/WeddingPromo.jpeg" alt="4-panel-sample" itemprop="image" height="450" width="400" title="4-panel-sample"  />
                                 </div>
                         </div>
                         </div>
@@ -606,11 +597,11 @@ CSS Migrated from BB theme:
                                   <p>&nbsp;</p>
                                   <h3>How Do I Book a Photo Booth?</h3>
                                   <h4>1) <a href="RatesAvailability.html">CHECK AVAILABILITY</a></h4>
-                                  <p>Submit a request to see if the date of your event is avaviable. It's best to check availability even if you're in the early stages of planning as reservations are regularly booked.</p>
+                                  <p>Submit a request to see if the date of your event is available. It's best to check availability even if you're in the early stages of planning as reservations are regularly booked.</p>
                                   <h4>2) PICK YOUR PACKAGE & RECEIVE YOUR FREE QUOTE</h4>
                                   <p> Choose a package that's just right for your event! Decide how long you'd like your booth, choose your print style (classic 2X6 photo strips or 4X6 portraits), and add any add-ons!   </p>
                                   <h4>3) RESERVE YOUR BOOTH </h4>
-                                  <p>Once you've picked package and decided the details of your event, we'll put everything in writing for you to reserve your booth with a deposit and signed contract </p>
+                                  <p>Once you've picked package and decided the details of your event, we'll put everything in writing for you to reserve your booth with a deposit and signed contract.</p>
                                   <h4>4) CUSTOMIZE CUSTOMIZE CUSTOMIZE</h4>
                                   <p>After your booth is reserved, we'll work with you to create your entirely custom experience. From designing a personalized logo for your prints, to custom screens for your booth, Snap Booth Photos does it all to ensure your photo booth eperience is top notch!</p>
                                   <h4>5) Enjoy!</h4>
@@ -866,22 +857,30 @@ var quadimages = document.querySelectorAll("#quad figure");
   </script>
 
 
-
-
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=297033134396801&amp;ev=PageView&amp;noscript=1"/></noscript>
+<script src='https://photoboothplus.com/wp-content/uploads/bb-plugin/cache/6-layout.js?ver=884a9421c1d6fd3bcb7aaa799f458aa6' id='fl-builder-layout-6-js'></script>
+<script src='https://photoboothplus.com/wp-content/plugins/bb-plugin/js/jquery.ba-throttle-debounce.min.js?ver=2.4.2.2' id='jquery-throttle-js'></script>
+<script src='https://photoboothplus.com/wp-content/plugins/bb-plugin/js/jquery.magnificpopup.min.js?ver=2.4.2.2' id='jquery-magnificpopup-js'></script>
+<script src='https://photoboothplus.com/wp-content/themes/bb-theme/js/bootstrap.min.js?ver=1.7.8' id='bootstrap-js'></script>
 
 <script id='fl-automator-js-extra'>
   var themeopts = {"medium_breakpoint":"992","mobile_breakpoint":"768"};
 </script>
 
+<script src='https://photoboothplus.com/wp-content/themes/bb-theme/js/theme.min.js?ver=1.7.8' id='fl-automator-js'></script>
+<script src='https://photoboothplus.com/wp-includes/js/wp-embed.min.js?ver=5.7.6' id='wp-embed-js'></script>
+
+<script id='aepc-pixel-events-js-extra'>
+  var aepc_pixel_events = {"custom_events":{"AdvancedEvents":[{"params":{"login_status":"not_logged_in","post_type":"page","object_id":"6","object_type":"home"}}]},"api":{"root":"https:\/\/photoboothplus.com\/wp-json\/","nonce":"56ee96128d"}};
+</script>
+<script src='https://photoboothplus.com/wp-content/plugins/pixel-caffeine/build/frontend.js?ver=2.3.3' id='aepc-pixel-events-js'></script>
 
 
 <script src="Components/navBar.js"></script>
 <script src="Components/footer.js"></script>
 
 
-
-
-
+<!--**************************FIREBASE CONFIG******************************************************-->
 <script type="module">
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js";
@@ -906,6 +905,5 @@ var quadimages = document.querySelectorAll("#quad figure");
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
 </script>
-
 </body>
 </html>
