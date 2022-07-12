@@ -154,17 +154,16 @@
                           <div class="fl-module fl-module-rich-text fl-node-59078ee664e3f" data-node="59078ee664e3f">
                             <div class="fl-module-content fl-node-content">
                               <div class="fl-rich-text">
-                                <h4 style="text-align: left">Cities We Serve</h4>
+                                <h4 style="text-align: left">Surrounding Areas</h4>
                                 <div id="header">
                                   <div id="subFooter">
                                     <div class="subFooterBkg">
                                       <div class="subShoe">
                                         <p>
                                           <span style="font-size: 14px">
-                                            <a href="Cities/city-template.html">CITY TEMPLATE</a> |
                                             <a href="photo-booth-ann-arbor.html">Ann Arbor</a> |
-                                            <a href="photo-booth-livonia-mi.html">Livonia</a> |
-                                            <a href="photo-booth-birmingham-mi.html">Birmingham</a> |
+                                            <a href="photo-booth-milan-mi.html">Milan</a> |
+                                            <a href="photo-booth-birmingham-mi.html">Bryan</a> |
                                             <a href="photo-booth-bloomfield-mi.html">Bloomfield</a> |
                                             <a href="photo-booth-novi-mi.html">Novi</a> |
                                             <a href="photo-booth-troy-mi.html">Troy</a> |
