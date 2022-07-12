@@ -44,51 +44,50 @@
                               <!--Reach Out Contact Info-->
                               <div class="fl-module fl-module-rich-text fl-node-59079189674fc" data-node="59079189674fc">
                                 <div class="fl-module-content fl-node-content">
-                                  <div class="fl-rich-text">
+                                <div class="fl-rich-text">
     
-                                    <h4>Reach Out</h4>
+                                <h4>Reach Out</h4>
 
-                                    <div class="fl-rich-text">
-                                    <p>
-                                      Snap Booth Photos<br />
-                                      <a href="tel:">(734) 707-7794</a> <br/>
-
-                                    <!--FaceBook Icon/Link-->
-                                    <span class="pp-social-icon"itemscope itemtype="http://schema.org/Organization">
-                                      <link itemprop="url" href=""/>
-                                      <a itemprop="sameAs" href="https://www.facebook.com/snapboothphotos" target="_blank" title="Facebook"
-                                      aria-label="Facebook" role="button" rel="noopener" style="padding-right: 5px;">
-                                      <i class="fa fa-facebook"></i>
-                                      </a>
-                                    </span>
+                                <div class="fl-rich-text">
+                                <p>
+                                  <!--FaceBook Icon/Link-->
+                                <span class="pp-social-icon"itemscope itemtype="http://schema.org/Organization">
+                                  <link itemprop="url" href=""/>
+                                  <a itemprop="sameAs" href="https://www.facebook.com/snapboothphotos" target="_blank" title="Facebook"
+                                  aria-label="Facebook" role="button" rel="noopener" style="padding-right: 5px;">
+                                  <i class="fa fa-facebook"style="font-size: 30px;"></i>
+                                  </a>
+                                </span>
 
 
 
-                                    <!--Twitter Icon/Link-->
-                                    <span class="pp-social-icon"itemscope itemtype="http://schema.org/Organization">
-                                      <link itemprop="url" href=""/>
-                                      <a itemprop="sameAs" href="https://www.instagram.com/snapboothphotos/" target="_blank" title="Instagram"
-                                      aria-label="Instagram" role="button" rel="noopener" style="padding-right: 5px;">
-                                      <i class="fa fa-instagram"></i>
-                                      </a>
-                                    </span>
+                                <!--Instagram Icon/Link-->
+                                <span class="pp-social-icon"itemscope itemtype="http://schema.org/Organization">
+                                  <link itemprop="url" href=""/>
+                                  <a itemprop="sameAs" href="https://www.instagram.com/snapboothphotos/" target="_blank" title="Instagram"
+                                  aria-label="Instagram" role="button" rel="noopener" style="padding-right: 5px;">
+                                  <i class="fa fa-instagram" style="font-size: 30px;"></i>
+                                  </a>
+                                </span>
 
-                                    <!--Youtube Icon/Link
-                                    <span class="pp-social-icon"itemscope itemtype="http://schema.org/Organization">
-                                      <link itemprop="url" href=""/>
-                                      <a class = "pp-social-icon" itemprop="sameAs" href="https://www.youtube.com/" target="_blank" title="YouTube"
-                                      aria-label="YouTube" role="button" rel="noopener">
-                                      <i class="fa fa-youtube"></i>
-                                      </a>
-                                    </span>
-                                    -->
+                                <!--Youtube Icon/Link
+                                <span class="pp-social-icon"itemscope itemtype="http://schema.org/Organization">
+                                  <link itemprop="url" href=""/>
+                                  <a class = "pp-social-icon" itemprop="sameAs" href="https://www.youtube.com/" target="_blank" title="YouTube"
+                                  aria-label="YouTube" role="button" rel="noopener">
+                                  <i class="fa fa-youtube"></i>
+                                  </a>
+                                </span>
+                                -->
+                                <br/>
+                                  Snap Booth Photos<br />
+                                  <a href="tel:">(734) 707-7794</a> 
 
+                                
 
-
-
-                                    </p>
-                                    </div>
-                                  </div>
+                                </p>
+                                </div>
+                              </div>
                                 </div>
                               </div>
                             </div>
@@ -110,7 +109,7 @@
                                     <ul>
                                       <li><a href="Corporate-Rentals.html">Corporate Events</a></li>
                                       <li><a href="Wedding-Rentals.html">Weddings</a></li>
-                                      <li><a href="Party-Rentalss.html">Parties</a></li>
+                                      <li><a href="Party-Rentals.html">Parties</a></li>
                                       <li><a href="Graduation-Rentals.html">Graduation Parties</a></li>
                                       <li>Charity Functions</li>
                                       <li>Bar &amp; Bat Mitzvahs</li>
@@ -134,7 +133,8 @@
                                     <ul>
                                       <li><a href="/RatesAvailability.html">Contact</a></li>
                                       <li> <a href="/FAQs.html">FAQ</a> </li>
-                                      <li> <a href="/cities.html">Cities We Serve</a> </li>
+                                      <li> <a href="/photo-booth-rental-guide.html">Rental Guide</a> </li>
+                                      <li> <a href="/testimonials.html">Testimonials</a> </li>
                                     </ul>
                                   </div>
                                 </div>
