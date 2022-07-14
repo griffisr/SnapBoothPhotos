@@ -160,21 +160,19 @@
                                     <div class="subFooterBkg">
                                       <div class="subShoe">
                                         <p>
-                                          <span style="font-size: 14px">
+                                         <span style="font-size: 14px">
                                             <a href="photo-booth-ann-arbor.html">Ann Arbor</a> |
                                             <a href="photo-booth-milan-mi.html">Milan</a> |
-                                            <a href="photo-booth-birmingham-mi.html">Bryan</a> |
-                                            <a href="photo-booth-bloomfield-mi.html">Bloomfield</a> |
-                                            <a href="photo-booth-novi-mi.html">Novi</a> |
-                                            <a href="photo-booth-troy-mi.html">Troy</a> |
-                                            <a href="photo-booth-royal-oak-mi.html">Royal Oak</a> |
-                                            <a href="photo-booth-detroit-mi.html">Detroit</a> |
-                                            <a href="photo-booth-southfield-mi.html">Southfield</a> |
-                                            <a href="photo-booth-lansing-mi.html">Lansing</a> |
-                                            <a href="photo-booth-flint-mi.html">Flint</a> |
-                                            <a href="photo-booth-grand-rapids-mi.html">Grand Rapids</a> |
-                                            <a href="photo-booth-jackson-mi.html">Jackson</a> |
-                                            <a href="photo-booth-kalamazoo-mi.html">Kalamazoo</a> |
+                                            <a href="photo-booth-ypsilanti-mi.html">Ypsilanti</a> |
+                                            <a href="photo-booth-saline-mi.html">Saline</a> |
+                                            <a href="photo-booth-tecumseh-mi.html">Tecumseh</a> |
+                                            <a href="photo-booth-adrian-mi.html">Adrian</a> |
+                                            <a href="photo-booth-novi-mi.html">Novi</a> |                        
+                                            <a href="photo-booth-chelsea-mi.html">Chelsea</a> |
+                                            <a href="photo-booth-toledo-oh.html">Toledo</a> |
+                                            <a href="photo-booth-bryan-oh.html">Bryan</a> |
+                                            <a href="photo-booth-angola-in.html">Angola</a> |
+                                            <a href="photo-booth-fremont-in.html">Fremont</a> 
                                           </span>
                                         </p>
                                       </div>
