@@ -220,7 +220,7 @@
                               <a href="#" class="thumbnail" style="border: none;">
                                 <div class="card 1" data-toggle="modal" data-target="#myModal">
                                   <div class="card_image">
-                                    <img id="wedding" src="Images/Promo/nonTraditionalSetup.jpg" />
+                                    <img id="wedding" src="Images/Logos/darkBackgroundLogo.jpg" />
                                   </div>
                                   <div class="card_title title-white">
                                     <p>HOURLY</p>
@@ -233,7 +233,7 @@
                               <a href="#" class="thumbnail" style="border: none;">
                                 <div class="card 2" data-toggle="modal" data-target="#myModal">
                                   <div class="card_image">
-                                    <img id="wedding" src="Images/Promo/nonTraditionalSetup.jpg" />
+                                    <img id="wedding" src="Images/Promo/Setup.jpg" />
                                   </div>
                                   <div class="card_title title-white">
                                     <p >ALL INCLUSIVE</p>
@@ -254,8 +254,7 @@
                                 <p>
                                   No matter what your budget is, we have a photo booth package that will definitely work
                                   for you.
-                                  Everyone that goes with the most affordable package always ends up getting everything
-                                  they need to have a really fun time.
+                                  With packages as low as <em>$400</em>, guests of all size budgets have everything they need to have a really fun time!
                                   Our upgrades are good for helping make the booth a larger scale social attraction at
                                   events, bringing everyone even closer together.
                                 </p>
@@ -899,63 +898,23 @@ function sendEmail (event, done) {
     $(function () {
       //when clicking on a link containing a Thumbnail
       $('a.thumbnail').click(function (e) {
-        console.log("test");
+        console.log($(this).find('img').attr('src'))
         //cancel the default browser action
         e.preventDefault();
         //set the scr attribute of the modal's img element
         //the value of the scr attribute of the image that is wrapped around the a element clicked by the user
        // $('#image-modal .modal-body img').attr('src', $(this).find('img').attr('src'));
        // $('#myModal .modal-body img').attr('id', $(this).find('img').attr('id'));
-        document.getElementById("modalBodyText").innerHTML = "Wedding Tester";
+       if($(this).find('img').attr('src') == "Images/Logos/darkBackgroundLogo.jpg")
+       {
+        document.getElementById("modalBodyText").innerHTML = "Hourly";
 
-        switch ($(this).find('img').attr('id')) {
-          case "Wedding":
-            document.getElementById("post-text").innerHTML = "A Covid-19 contact tracing program. Users can log in or create an account using Google Auth. Once logged in, users can keep track of guests via a check in/check out system stored globally in Firbase that could be used for Covid-19 contact tracing ";
-            document.getElementById("post-intro").innerHTML = "Technology Used:";
-            document.getElementById("post-outro").innerHTML = "HTML,CSS, Javascript, Google User Authentication, Firebase, and AWS:(S3, Route53, & API Gateway)";
-            document.getElementById("demoLink").innerHTML = "Live Demo";
-            document.getElementById("demoLink").href = "/CovidContactTracer";
-            document.getElementById("codeLink").innerHTML = "View Code";
-            document.getElementById("codeLink").href = "https://github.com/griffisr/CovidContactTracer";
-            break;
-          case "Peppers Mexican Grill":
-            document.getElementById("post-text").innerHTML = "A webpage designed for a local mexican restaurant";
-            document.getElementById("post-intro").innerHTML = "Technology Used:";
-            document.getElementById("post-outro").innerHTML = "HTML,CSS, Javascript, and AWS:(S3, Route53, & API Gateway)";
-            document.getElementById("demoLink").innerHTML = "Live Demo";
-            document.getElementById("demoLink").href = "http://www.peppersmexicangrill.net/";
-            document.getElementById("codeLink").innerHTML = "View Code";
-            document.getElementById("codeLink").href = "https://github.com/griffisr/Peppers-Website";
-            break;
-          case "Snap Booth Photos":
-            document.getElementById("post-text").innerHTML = "A multi-page website for my personal business utilizing real time Google Analytics to guide marketing. The emphasis for this project, in addition to pleasing UI, was to build out user tracking via analytics calls to track customer conversion.";
-            document.getElementById("post-intro").innerHTML = "Technology Used:";
-            document.getElementById("post-outro").innerHTML = "HTML,CSS, Javascript,Google Analytics and AWS:(S3, Route53, Lambda, SES, & API Gateway)";
-            document.getElementById("demoLink").innerHTML = "Live Demo";
-            document.getElementById("demoLink").href = "http://snapboothphotos.com/";
-            document.getElementById("codeLink").innerHTML = "View Code";
-            document.getElementById("codeLink").href = "https://github.com/griffisr/PhotoboothNew";
-            break;
-          case "Counting Kards":
-            document.getElementById("post-text").innerHTML = "A simple cards-based kanban board app heavily inspired by Trello in Vanilla JS. Users can create boards, which hold cards, which can hold items which can be dragged around cards.";
-            document.getElementById("post-intro").innerHTML = "Technology Used:";
-            document.getElementById("post-outro").innerHTML = "HTML,CSS, Javascript";
-            document.getElementById("demoLink").innerHTML = "Live Demo";
-            document.getElementById("demoLink").href = "/trello-clone";
-            document.getElementById("codeLink").innerHTML = "View Code";
-            document.getElementById("codeLink").href = "https://github.com/griffisr/trello-clone";
-            break;
-          case "Space Memory Game":
-            document.getElementById("post-text").innerHTML = "A simple cards-based memory game in Vanilla JS. Users try and match up space images on the back of cards in the shortest time and least amount of moves. The leaderboard is stored globally via firebase DB so anyone can play and make it on the board";
-            document.getElementById("post-intro").innerHTML = "Technology Used:";
-            document.getElementById("post-outro").innerHTML = "Bootstrap, Firebase, HTML,CSS, Javascript";
-            document.getElementById("demoLink").innerHTML = "Live Demo";
-            document.getElementById("demoLink").href = "/memory-game";
-            document.getElementById("codeLink").innerHTML = "View Code";
-            document.getElementById("codeLink").href = "https://github.com/griffisr/memory-game";
-            break;
-
-        }
+       }
+       else if($(this).find('img').attr('src') == "Images/Promo/Setup.jpg")
+       {
+        document.getElementById("modalBodyText").innerHTML = "All Inclusive"
+       }
+        
 
       });
     })
