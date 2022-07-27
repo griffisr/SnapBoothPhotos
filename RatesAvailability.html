@@ -1,354 +1,385 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <title>QUOTE Test</title>
-    <!-- <title>Snap Booth || REQUEST A QUOTE!</title> -->
-      <!--Favicon -->
-      <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/128/3004/3004613.png">
+
+<head>
+  <title>QUOTE Test</title>
+  <!-- <title>Snap Booth || REQUEST A QUOTE!</title> -->
+  <!--Favicon -->
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/128/3004/3004613.png">
 
 
 
 
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-      <link rel='stylesheet' type="text/css" href='CSS/price-cards.css' media='all' />
+  <link rel='stylesheet' type="text/css" href='CSS/price-cards.css' media='all' />
 
-    <link rel='stylesheet' id='wp-block-library-css' type="text/css" href='CSS/wp-includes/css/dist/block-library/style.min.css' media='all' />
-      <link rel='stylesheet' id='wp-block-library-theme-css' type="text/css" href='CSS/wp-includes/css/dist/block-library/theme.min.css' media='all' />  
-      <link rel='stylesheet' id='fl-builder-layout-24290-css'  href='CSS/wp-content/uploads/bb-plugin/cache/24290-layout.css' media='all' />
-      <link rel='stylesheet' id='cpsh-shortcodes-css' type="text/css" href='CSS/wp-content/plugins/column-shortcodes//assets/css/shortcodes.css' media='all' />
-      <link rel='stylesheet' id='jquery-magnificpopup-css' type="text/css" href='CSS/wp-content/plugins/bb-plugin/css/jquery.magnificpopup.min.css' media='all' />
-      <link rel='stylesheet' id='bootstrap-css' type="text/css" href='CSS/wp-content/themes/bb-theme/css/bootstrap.min.css' media='all' />
-      <link rel='stylesheet' id='fl-automator-skin-css'  href='CSS/wp-content/uploads/bb-theme/skin-60abfa396f860.css' media='all' />
-      <link rel='stylesheet' id='pp-animate-css'  href='CSS/wp-content/plugins/bbpowerpack/assets/css/animate.min.css' media='all' />
-      <link rel='stylesheet' id='foundation-icons-css'  href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css?ver=2.4.2.2' media='all' />
-  </head>
-
-
-  <app-button id="template-tester"></app-button>
-
-  <script src='JS/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
-  <script src='JS/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
-  <!--Initialize Firebase-->
-  <script src="https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.8.3/firebase-database.js"></script>
-  <script src='JS/Firebase/analytics.js'></script>
-  <script>
-    function submitToAPI(e) {
-
-      
-         
-        
-            
-           e.preventDefault(); 
-           var URL = "https://vpppichqf5.execute-api.us-east-2.amazonaws.com/prod/email";
+  <link rel='stylesheet' id='wp-block-library-css' type="text/css"
+    href='CSS/wp-includes/css/dist/block-library/style.min.css' media='all' />
+  <link rel='stylesheet' id='wp-block-library-theme-css' type="text/css"
+    href='CSS/wp-includes/css/dist/block-library/theme.min.css' media='all' />
+  <link rel='stylesheet' id='fl-builder-layout-24290-css' href='CSS/wp-content/uploads/bb-plugin/cache/24290-layout.css'
+    media='all' />
+  <link rel='stylesheet' id='cpsh-shortcodes-css' type="text/css"
+    href='CSS/wp-content/plugins/column-shortcodes//assets/css/shortcodes.css' media='all' />
+  <link rel='stylesheet' id='jquery-magnificpopup-css' type="text/css"
+    href='CSS/wp-content/plugins/bb-plugin/css/jquery.magnificpopup.min.css' media='all' />
+  <link rel='stylesheet' id='bootstrap-css' type="text/css" href='CSS/wp-content/themes/bb-theme/css/bootstrap.min.css'
+    media='all' />
+  <link rel='stylesheet' id='fl-automator-skin-css' href='CSS/wp-content/uploads/bb-theme/skin-60abfa396f860.css'
+    media='all' />
+  <link rel='stylesheet' id='pp-animate-css' href='CSS/wp-content/plugins/bbpowerpack/assets/css/animate.min.css'
+    media='all' />
+  <link rel='stylesheet' id='foundation-icons-css'
+    href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css?ver=2.4.2.2' media='all' />
+</head>
 
 
-           var name = document.getElementById("name-input").value;
-           var subject = document.getElementById("subject-input").value;
-           var email = document.getElementById("email-input").value;
-           var location = document.getElementById("citySTATE").value;
-           var eventDesc = document.getElementById("eventDesc").value;
-           var venue = document.getElementById("venue").value;
-           var guestCount = document.getElementById("guestCount").value;
-           var indoorOutdoor = "";
+<!--Nav Bar Component-->
+<app-button id="template-tester"></app-button>
 
-           if(document.getElementById("field_97kd9u-0").checked){
-            indoorOutdoor = document.getElementById("field_97kd9u-0").value
-          }
-          else if(document.getElementById("field_97kd9u-1").checked){
-            indoorOutdoor = document.getElementById("field_97kd9u-1").value
-          }
-          else if(document.getElementById("field_97kd9u-2").checked){
-            indoorOutdoor = document.getElementById("field_97kd9u-2").value
-          }
-          else if(document.getElementById("field_97kd9u-3").checked){
-            indoorOutdoor = document.getElementById("field_97kd9u-3").value
-          }
-          else if(document.getElementById("field_97kd9u-4").checked){
-            indoorOutdoor = document.getElementById("field_97kd9u-4").value
-          }
+<script src='JS/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
+<script src='JS/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
 
-          var foundUs = document.getElementById("field_t1zhai").value
-
-          var referred = document.getElementById("referredBy").value
-       
-          var message = document.getElementById("message-input").value;
+<!--Initialize Firebase-->
+<script src="https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.8.3/firebase-database.js"></script>
+<script src='JS/Firebase/analytics.js'></script>
+<script>
+  function submitToAPI(e) {
 
 
-          var data = {
-              name : name,
-              subject : subject,
-              email : email,
-              location: location,
-              eventDesc: eventDesc,
-              venue: venue,
-              guestCount: guestCount,
-              indoorOutdoor: indoorOutdoor,
-              foundUs: foundUs,
-              referred: referred,
-              message : message
-            };
-
-           if (name=="" || subject=="" || email=="" || location=="" || eventDesc=="" || guestCount=="" || indoorOutdoor=="" || foundUs=="")
-            {
-              console.log(data)
-                alert("Please Fill All Required Field");
-                return false;
-            }
 
 
-           
+
+    e.preventDefault();
+    var URL = "https://vpppichqf5.execute-api.us-east-2.amazonaws.com/prod/email";
 
 
-            var xmlhttp = new XMLHttpRequest();
-            xmlhttp.open("POST", "https://vpppichqf5.execute-api.us-east-2.amazonaws.com/prod/email");
-            xmlhttp.setRequestHeader("Content-Type", "application/json");
+    var name = document.getElementById("name-input").value;
+    var subject = document.getElementById("subject-input").value;
+    var email = document.getElementById("email-input").value;
+    var location = document.getElementById("citySTATE").value;
+    var eventDesc = document.getElementById("eventDesc").value;
+    var venue = document.getElementById("venue").value;
+    var guestCount = document.getElementById("guestCount").value;
+    var indoorOutdoor = "";
 
-            xmlhttp.send(JSON.stringify(data));
-            xmlhttp.onreadystatechange = function() {
-            if (xmlhttp.readyState === 4) {
-                var response = JSON.parse(xmlhttp.responseText);
-                if (xmlhttp.status === 200 ) {
-                    console.log('successful');
-                    alert("Thank you! Your information has been submitted!")
-                    window.location.href="http://snapboothphotos.com";
-                } else {
-                    console.log('failed');
-                }
-            }
+    if (document.getElementById("field_97kd9u-0").checked) {
+      indoorOutdoor = document.getElementById("field_97kd9u-0").value
+    }
+    else if (document.getElementById("field_97kd9u-1").checked) {
+      indoorOutdoor = document.getElementById("field_97kd9u-1").value
+    }
+    else if (document.getElementById("field_97kd9u-2").checked) {
+      indoorOutdoor = document.getElementById("field_97kd9u-2").value
+    }
+    else if (document.getElementById("field_97kd9u-3").checked) {
+      indoorOutdoor = document.getElementById("field_97kd9u-3").value
+    }
+    else if (document.getElementById("field_97kd9u-4").checked) {
+      indoorOutdoor = document.getElementById("field_97kd9u-4").value
+    }
+
+    var foundUs = document.getElementById("field_t1zhai").value
+
+    var referred = document.getElementById("referredBy").value
+
+    var message = document.getElementById("message-input").value;
+
+
+    var data = {
+      name: name,
+      subject: subject,
+      email: email,
+      location: location,
+      eventDesc: eventDesc,
+      venue: venue,
+      guestCount: guestCount,
+      indoorOutdoor: indoorOutdoor,
+      foundUs: foundUs,
+      referred: referred,
+      message: message
+    };
+
+    if (name == "" || subject == "" || email == "" || location == "" || eventDesc == "" || guestCount == "" || indoorOutdoor == "" || foundUs == "") {
+      console.log(data)
+      alert("Please Fill All Required Field");
+      return false;
+    }
+
+
+
+
+
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("POST", "https://vpppichqf5.execute-api.us-east-2.amazonaws.com/prod/email");
+    xmlhttp.setRequestHeader("Content-Type", "application/json");
+
+    xmlhttp.send(JSON.stringify(data));
+    xmlhttp.onreadystatechange = function () {
+      if (xmlhttp.readyState === 4) {
+        var response = JSON.parse(xmlhttp.responseText);
+        if (xmlhttp.status === 200) {
+          console.log('successful');
+          alert("Thank you! Your information has been submitted!")
+          window.location.href = "http://snapboothphotos.com";
+        } else {
+          console.log('failed');
         }
+      }
+    }
 
-        document.getElementById('contact-form').reset();
-
-        
-        }
-  </script>
+    document.getElementById('contact-form').reset();
 
 
-
-
-
-  <body class="page-template-default page page-id-24290 fl-builder fl-framework-bootstrap fl-preset-default fl-full-width" itemscope="itemscope" itemtype="https://schema.org/WebPage">
-      <!------------------------------Main Content--------------------------------------------------->
-      <!-- .fl-page-header -->
-      <div id="fl-main-content" class="fl-page-content" itemprop="mainContentOfPage" role="main" style="padding-bottom: 20px;">
-        <div class="fl-content-full container">
-          <div class="row">
-            <div class="fl-content col-md-12">
-              <article class="fl-post post-24290 page type-page status-publish hentry" id="fl-post-24290" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
-                <div class="fl-post-content clearfix" itemprop="text">
-                  <div class="fl-builder-content fl-builder-content-24290 fl-builder-content-primary fl-builder-global-templates-locked" data-post-id="24290">
-
-
-                                          <!--header-->
-                                          <div class="fl-col-group fl-node-58eb15a01984e" data-node="58eb15a01984e">
-                                            <div class="fl-col fl-node-58eb15a019bb7" data-node="58eb15a019bb7">
-                                              <div class="fl-col-content fl-node-content">
-                                                <div class="fl-module fl-module-heading fl-node-58eb15a0195c7" data-node="58eb15a0195c7">
-                                                  <div class="fl-module-content fl-node-content">
-                                                    <a href="#contact-form">
-                                                    <h1 class="fl-heading">
-                                                      <span class="fl-heading-text">
-                                                        Request a Quote today!
-                                                      </span>
-                                                    </h1>
-                                                  </a>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                   
-
-                    
-                   
-                    
+  }
+</script>
 
 
 
-                          <!--Left Side-->
 
-                    <div class="fl-col fl-node-58eb127f354c6" data-node="58eb127f354c6">
+
+<body class="page-template-default page page-id-24290 fl-builder fl-framework-bootstrap fl-preset-default fl-full-width"
+  itemscope="itemscope" itemtype="https://schema.org/WebPage">
+  <!------------------------------Main Content--------------------------------------------------->
+  <!-- .fl-page-header -->
+  <div id="fl-main-content" class="fl-page-content" itemprop="mainContentOfPage" role="main"
+    style="padding-bottom: 20px;">
+    <div class="fl-content-full container">
+      <div class="row">
+        <div class="fl-content col-md-12">
+          <article class="fl-post post-24290 page type-page status-publish hentry" id="fl-post-24290"
+            itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+            <div class="fl-post-content clearfix" itemprop="text">
+              <div
+                class="fl-builder-content fl-builder-content-24290 fl-builder-content-primary fl-builder-global-templates-locked"
+                data-post-id="24290">
+
+
+                <!--header-->
+                <div class="fl-col-group fl-node-58eb15a01984e" data-node="58eb15a01984e">
+                  <div class="fl-col fl-node-58eb15a019bb7" data-node="58eb15a019bb7">
                     <div class="fl-col-content fl-node-content">
-                      <div class="fl-module fl-module-callout fl-node-58eb115d1748d" data-node="58eb115d1748d">
+                      <div class="fl-module fl-module-heading fl-node-58eb15a0195c7" data-node="58eb15a0195c7">
                         <div class="fl-module-content fl-node-content">
-                          <div class="fl-callout fl-callout-left">
-                            <div class="fl-callout-content">
-
-                              
-
-                              
-                              <!-- <div class="fl-callout-button">
-                                <div class="fl-button-wrap fl-button-width-auto">
-                                  <a href="/RatesAvailability.html" target="_self" class="fl-button" role="button">
-                                    <span class="fl-button-text">
-                                      REQUEST A FREE QUOTE NOW
-                                    </span>
-                                  </a>
-                                </div>
-                              </div>  
-                             <div class="fl-module fl-module-pp-image fl-node-58eb128cd5144" data-node="58eb128cd5144">
-                                  <div class="pp-photo-container">
-                                    <div class="pp-photo pp-photo-align-left pp-photo-align-responsive-default" itemscope itemtype="http://schema.org/ImageObject">
-                                      <div class="pp-photo-content">
-                                        <div class="pp-photo-content-inner">
-                                          <img loading="lazy" width="600" height="300" class="pp-photo-img wp-image-24217 size-full" src="Images/WeddingPromo.jpeg" alt="3-image-strip" itemprop="image" srcset="Images/WeddingPromo.jpeg" sizes="(max-width: 200px) 100vw, 200px" />
-                                          <div class="pp-overlay-bg"></div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                </div>
-                              </div>
-                            
-                            
-                            -->
-
-                            <div class="cards-list">
-  
-                              <div class="card 1">
-                                <div class="card_image"> <img src="Images/Promo/nonTraditionalSetup.jpg" /> </div>
-                                <div class="card_title title-white">
-                                  <p>HOURLY</p>
-                                </div>
-                              </div>
-                              
-                                <div class="card 2">
-                                <div class="card_image">
-                                  <img src="Images/Promo/nonTraditionalSetup.jpg" />
-                                  </div>
-                                <div class="card_title title-white">
-                                  <p>ALL INCLUSIVE</p>
-                                </div>
-                              </div>
-                              
-                              </div>
-
-
-
-
-
-
-                              <div class="fl-callout-text-wrap" style="padding-top: 20px;">
-                                <div class="fl-callout-text">
-                                  <p>
-                                    No matter what your budget is, we have a photo booth package that will definitely work for you. 
-                                    Everyone that goes with the most affordable package always ends up getting everything they need to have a really fun time. 
-                                    Our upgrades are good for helping make the booth a larger scale social attraction at events, bringing everyone even closer together.
-                                  </p>
-                                </div>
-                              </div>
-
-
-                              
-                              
-
-
-
-                            </div>
-                          </div>
+                          <a href="#contact-form">
+                            <h1 class="fl-heading">
+                              <span class="fl-heading-text">
+                                Request a Quote today!
+                              </span>
+                            </h1>
+                          </a>
                         </div>
                       </div>
                     </div>
                   </div>
-
-                  <!--End Left-->
-
-
-                  <!--Right Side-->
-                  <div class="fl-col fl-node-58eb127f35513" data-node="58eb127f35513" style="padding-left: 2%; padding-right: 2%;">
-                    <div class="fl-col-content fl-node-content">
-
-
-
-
-                      <form id="contact-form" method="POST">
-                        <label>Name</label>
-                        <input id="name-input" class="input-field" type="text" name="name">
-        
-                        <label>Email</label>
-                        <input id="email-input" class="input-field" type="text" name="email">
-
-                        <label>Event Date</label>
-                        <input id="subject-input"class="input-field" type="date" name="subject">
-
-
-                        <div id="frm_field_19733_container" class="frm_form_field form-field  frm_required_field frm_top_container">
-                          <label for="eventDesc" class="frm_primary_label">* Event Type/Description
-                              <span class="frm_required">*</span> 
-                          </label>
-                          <input type="text" id="eventDesc" name="eventDesc" value=""  data-reqmsg="This field cannot be blank."  placeholder="(i.e., Wedding, Corporate Party, etc.)" />
-                      
-                          
-                          
-                      </div>
-        
-                        
-
-
-                            <input type="hidden" name="frm_action" value="create" />
-                            <input type="hidden" name="form_id" value="461" />
-                            <input type="hidden" name="frm_hide_fields_461" id="frm_hide_fields_461" value="" />
-                            <input type="hidden" name="form_key" value="caxvs" />
-                            <input type="hidden" name="item_meta[0]" value="" />
-                            <input type="hidden" id="frm_submit_entry_461" name="frm_submit_entry_461" value="ee485a3d3a" /><input type="hidden" name="_wp_http_referer" value="/contact-us/" />
-
-                            <div id="frm_field_13605_container" class="form-field  frm_required_field  frm_top_container">
-                              <label class="frm_pos_ frm_primary_label">* How Did You Find Us?
-                                  <span class="frm_required">*</span>
-                              </label>
-                              <select name="item_meta[13605]" id="field_t1zhai"  data-reqmsg="How Did You Find Us? can&#039;t be blank" style="width: 100%;" >
-                              <option value=""  selected="selected"> </option>
-                                  <option value="Google Search" >Google Search</option>
-                                  <option value="Other Search Engine" >Other Search Engine</option>
-                                  <option value="Bridal Show" >Bridal Show</option>
-                                  <option value="Facebook/Instagram" >Facebook/Instagram</option>
-                                  <option value="The Knot" >The Knot</option>
-                                  <option value="WeddingWire.com" >WeddingWire.com</option>
-                                  <option value="Referred by a wedding/event planner" >Referred by a wedding/event planner</option>
-                                  <option value="Referred by a photographer" >Referred by a photographer</option>
-                                  <option value="Referred by an event venue/location" >Referred by an event venue/location</option>
-                                  <option value="Referred by someone else" >Referred by someone else</option>
-                                  <option value="Saw you at a wedding I attended" >Saw you at a wedding I attended</option>
-                                  <option value="Saw you at an event I attended" >Saw you at an event I attended</option>
-                              </select>
-                          
-                              
-                          </div>
-
-
-                          <div id="frm_field_13607_container" class="form-field   frm_top_container">
-                            <label class="frm_pos_ frm_primary_label">How can we help you? (optional)
-                                <span class="frm_required"></span>
-                            </label>
-                            <textarea name="item_meta[13607]" id="message-input" rows="5"    ></textarea>
-                        
-                            
-                        </div>
-
-                        <br>
-                        <a href="snapboothphotos.com">
-                          <input id="submit-btn" type="submit" value="Request Quote Now" onclick="submitToAPI(event)" style="width: 100%;">
-                        </a>
-
-
-                      </form>
-
-
-                    </div>
-                  </div>
-                  <!--End Right side-->
-
-
-
-
-
-
                 </div>
 
+
+                <!--Left Side-->
+
+                <div class="fl-col fl-node-58eb127f354c6" data-node="58eb127f354c6">
+                  <div class="fl-col-content fl-node-content">
+                    <div class="fl-module fl-module-callout fl-node-58eb115d1748d" data-node="58eb115d1748d">
+                      <div class="fl-module-content fl-node-content">
+                        <div class="fl-callout fl-callout-left">
+                          <div class="fl-callout-content">
+
+
+
+
+
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" role="dialog">
+                              <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title" id="modal-title">Modal Header</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p id="modalBodyText">Some text in the modal.</p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+
+                            <div class="cards-list">
+
+                              <a href="#" class="thumbnail" style="border: none;">
+                                <div class="card 1" data-toggle="modal" data-target="#myModal">
+                                  <div class="card_image">
+                                    <img id="wedding" src="Images/Promo/nonTraditionalSetup.jpg" />
+                                  </div>
+                                  <div class="card_title title-white">
+                                    <p>HOURLY</p>
+                                  </div>
+                                </div>
+
+                              </a>
+                              
+
+                              <a href="#" class="thumbnail" style="border: none;">
+                                <div class="card 2" data-toggle="modal" data-target="#myModal">
+                                  <div class="card_image">
+                                    <img id="wedding" src="Images/Promo/nonTraditionalSetup.jpg" />
+                                  </div>
+                                  <div class="card_title title-white">
+                                    <p >ALL INCLUSIVE</p>
+                                  </div>
+                                </div>
+                              </a>
+                              
+
+                            </div>
+
+
+
+
+
+
+                            <div class="fl-callout-text-wrap" style="padding-top: 20px;">
+                              <div class="fl-callout-text">
+                                <p>
+                                  No matter what your budget is, we have a photo booth package that will definitely work
+                                  for you.
+                                  Everyone that goes with the most affordable package always ends up getting everything
+                                  they need to have a really fun time.
+                                  Our upgrades are good for helping make the booth a larger scale social attraction at
+                                  events, bringing everyone even closer together.
+                                </p>
+                              </div>
+                            </div>
+
+
+
+
+
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!--End Left-->
+
+
+                <!--Right Side-->
+                <div class="fl-col fl-node-58eb127f35513" data-node="58eb127f35513"
+                  style="padding-left: 2%; padding-right: 2%;">
+                  <div class="fl-col-content fl-node-content">
+
+
+
+
+                    <form id="contact-form" method="POST">
+                      <label>Name</label>
+                      <input id="name-input" class="input-field" type="text" name="name">
+
+                      <label>Email</label>
+                      <input id="email-input" class="input-field" type="text" name="email">
+
+                      <label>Event Date</label>
+                      <input id="subject-input" class="input-field" type="date" name="subject">
+
+
+                      <div id="frm_field_19733_container"
+                        class="frm_form_field form-field  frm_required_field frm_top_container">
+                        <label for="eventDesc" class="frm_primary_label">* Event Type/Description
+                          <span class="frm_required">*</span>
+                        </label>
+                        <input type="text" id="eventDesc" name="eventDesc" value=""
+                          data-reqmsg="This field cannot be blank."
+                          placeholder="(i.e., Wedding, Corporate Party, etc.)" />
+
+
+
+                      </div>
+
+
+
+
+                      <input type="hidden" name="frm_action" value="create" />
+                      <input type="hidden" name="form_id" value="461" />
+                      <input type="hidden" name="frm_hide_fields_461" id="frm_hide_fields_461" value="" />
+                      <input type="hidden" name="form_key" value="caxvs" />
+                      <input type="hidden" name="item_meta[0]" value="" />
+                      <input type="hidden" id="frm_submit_entry_461" name="frm_submit_entry_461"
+                        value="ee485a3d3a" /><input type="hidden" name="_wp_http_referer" value="/contact-us/" />
+
+                      <div id="frm_field_13605_container" class="form-field  frm_required_field  frm_top_container">
+                        <label class="frm_pos_ frm_primary_label">* How Did You Find Us?
+                          <span class="frm_required">*</span>
+                        </label>
+                        <select name="item_meta[13605]" id="field_t1zhai"
+                          data-reqmsg="How Did You Find Us? can&#039;t be blank" style="width: 100%;">
+                          <option value="" selected="selected"> </option>
+                          <option value="Google Search">Google Search</option>
+                          <option value="Other Search Engine">Other Search Engine</option>
+                          <option value="Bridal Show">Bridal Show</option>
+                          <option value="Facebook/Instagram">Facebook/Instagram</option>
+                          <option value="The Knot">The Knot</option>
+                          <option value="WeddingWire.com">WeddingWire.com</option>
+                          <option value="Referred by a wedding/event planner">Referred by a wedding/event planner
+                          </option>
+                          <option value="Referred by a photographer">Referred by a photographer</option>
+                          <option value="Referred by an event venue/location">Referred by an event venue/location
+                          </option>
+                          <option value="Referred by someone else">Referred by someone else</option>
+                          <option value="Saw you at a wedding I attended">Saw you at a wedding I attended</option>
+                          <option value="Saw you at an event I attended">Saw you at an event I attended</option>
+                        </select>
+
+
+                      </div>
+
+
+                      <div id="frm_field_13607_container" class="form-field   frm_top_container">
+                        <label class="frm_pos_ frm_primary_label">How can we help you? (optional)
+                          <span class="frm_required"></span>
+                        </label>
+                        <textarea name="item_meta[13607]" id="message-input" rows="5"></textarea>
+
+
+                      </div>
+
+                      <br>
+                      <a href="snapboothphotos.com">
+                        <input id="submit-btn" type="submit" value="Request Quote Now" onclick="submitToAPI(event)"
+                          style="width: 100%;">
+                      </a>
+
+
+                    </form>
+
+
+                  </div>
+                </div>
+                <!--End Right side-->
+
+
+
+
+
               </div>
+
             </div>
-          </div>
+        </div>
+      </div>
 
 
 
@@ -356,7 +387,7 @@
 
 
 
-                    <!------------------------------
+      <!------------------------------
                     <div class="fl-row fl-row-fixed-width fl-row-bg-none fl-node-58eb154785bbc" data-node="58eb154785bbc">
                       <div class="fl-row-content-wrap">
                         <div class="uabb-row-separator uabb-top-row-separator"></div>
@@ -593,78 +624,83 @@ function sendEmail (event, done) {
                     </div>
 
  -->
-                    
-                </div>
-                 <!---------------------------------START FOOTER------------------------------------------------------------------------------------------------------------------------->
-      <!-----------Start Rental Footer Banner----------------->
-        
-      </div>
-      <!-----------End Rental Footer Banner----------------->
+
+    </div>
+    <!---------------------------------START FOOTER------------------------------------------------------------------------------------------------------------------------->
+    <!-----------Start Rental Footer Banner----------------->
+
+  </div>
+  <!-----------End Rental Footer Banner----------------->
 
 
 
-    <div class="uabb-js-breakpoint" style="display: none"></div>
+  <div class="uabb-js-breakpoint" style="display: none"></div>
 
   <!-- .fl-post-content -->
-</article>
-<!-- .fl-post -->
+  </article>
+  <!-- .fl-post -->
 
-<!-- .fl-page-content -->
-
-
-<link rel="stylesheet" id="fl-builder-layout-24416-css" href="CSS/wp-content/uploads/bb-plugin/cache/24416-layout-partial.css" media="all"/>
+  <!-- .fl-page-content -->
 
 
-<!-----------Start Big Middle Footer----------------->
-<div class="fl-builder-content fl-builder-content-24416 fl-builder-template fl-builder-row-template fl-builder-global-templates-locked" data-post-id="24416">
-<div class="fl-row fl-row-full-width fl-row-bg-color fl-node-59078ee665034" data-node="59078ee665034">
-<div class="fl-row-content-wrap">
-
-<div class="uabb-row-separator uabb-top-row-separator"></div>
-
-<div class="fl-row-content fl-row-fixed-width fl-node-content">
-  <div class="fl-col-group fl-node-59078ee664db2" data-node="59078ee664db2">
-    <div class="fl-col fl-node-59078ee664dfe fl-col-has-cols" data-node="59078ee664dfe">
-      <div class="fl-col-content fl-node-content">
+  <link rel="stylesheet" id="fl-builder-layout-24416-css"
+    href="CSS/wp-content/uploads/bb-plugin/cache/24416-layout-partial.css" media="all" />
 
 
-        <!-----------Start(X X X)Footer----------------->
-        <div class="fl-col-group fl-node-59078ee664e7e fl-col-group-nested" data-node="59078ee664e7e">
+  <!-----------Start Big Middle Footer----------------->
+  <div
+    class="fl-builder-content fl-builder-content-24416 fl-builder-template fl-builder-row-template fl-builder-global-templates-locked"
+    data-post-id="24416">
+    <div class="fl-row fl-row-full-width fl-row-bg-color fl-node-59078ee665034" data-node="59078ee665034">
+      <div class="fl-row-content-wrap">
+
+        <div class="uabb-row-separator uabb-top-row-separator"></div>
+
+        <div class="fl-row-content fl-row-fixed-width fl-node-content">
+          <div class="fl-col-group fl-node-59078ee664db2" data-node="59078ee664db2">
+            <div class="fl-col fl-node-59078ee664dfe fl-col-has-cols" data-node="59078ee664dfe">
+              <div class="fl-col-content fl-node-content">
 
 
-          <!--Footer (0 0 X)-->
-          <div class="fl-col fl-node-59078ee664ef4 fl-col-small" data-node="59078ee664ef4">
-            <div class="fl-col-content fl-node-content">
-              <!--Reach Out Contact Info-->
-              <div class="fl-module fl-module-rich-text fl-node-59079189674fc" data-node="59079189674fc">
-                <div class="fl-module-content fl-node-content">
-                  <div class="fl-rich-text">
-    
-                    <h4>Reach Out</h4>
-
-                    <div class="fl-rich-text">
-                    <p>
-                      <!--FaceBook Icon/Link-->
-                    <span class="pp-social-icon"itemscope itemtype="http://schema.org/Organization">
-                      <link itemprop="url" href=""/>
-                      <a itemprop="sameAs" href="https://www.facebook.com/snapboothphotos" target="_blank" title="Facebook"
-                      aria-label="Facebook" role="button" rel="noopener" style="padding-right: 5px;">
-                      <i class="fa fa-facebook"style="font-size: 30px;"></i>
-                      </a>
-                    </span>
+                <!-----------Start(X X X)Footer----------------->
+                <div class="fl-col-group fl-node-59078ee664e7e fl-col-group-nested" data-node="59078ee664e7e">
 
 
+                  <!--Footer (0 0 X)-->
+                  <div class="fl-col fl-node-59078ee664ef4 fl-col-small" data-node="59078ee664ef4">
+                    <div class="fl-col-content fl-node-content">
+                      <!--Reach Out Contact Info-->
+                      <div class="fl-module fl-module-rich-text fl-node-59079189674fc" data-node="59079189674fc">
+                        <div class="fl-module-content fl-node-content">
+                          <div class="fl-rich-text">
 
-                    <!--Instagram Icon/Link-->
-                    <span class="pp-social-icon"itemscope itemtype="http://schema.org/Organization">
-                      <link itemprop="url" href=""/>
-                      <a itemprop="sameAs" href="https://www.instagram.com/snapboothphotos/" target="_blank" title="Instagram"
-                      aria-label="Instagram" role="button" rel="noopener" style="padding-right: 5px;">
-                      <i class="fa fa-instagram" style="font-size: 30px;"></i>
-                      </a>
-                    </span>
+                            <h4>Reach Out</h4>
 
-                    <!--Youtube Icon/Link
+                            <div class="fl-rich-text">
+                              <p>
+                                <!--FaceBook Icon/Link-->
+                                <span class="pp-social-icon" itemscope itemtype="http://schema.org/Organization">
+                                  <link itemprop="url" href="" />
+                                  <a itemprop="sameAs" href="https://www.facebook.com/snapboothphotos" target="_blank"
+                                    title="Facebook" aria-label="Facebook" role="button" rel="noopener"
+                                    style="padding-right: 5px;">
+                                    <i class="fa fa-facebook" style="font-size: 30px;"></i>
+                                  </a>
+                                </span>
+
+
+
+                                <!--Instagram Icon/Link-->
+                                <span class="pp-social-icon" itemscope itemtype="http://schema.org/Organization">
+                                  <link itemprop="url" href="" />
+                                  <a itemprop="sameAs" href="https://www.instagram.com/snapboothphotos/" target="_blank"
+                                    title="Instagram" aria-label="Instagram" role="button" rel="noopener"
+                                    style="padding-right: 5px;">
+                                    <i class="fa fa-instagram" style="font-size: 30px;"></i>
+                                  </a>
+                                </span>
+
+                                <!--Youtube Icon/Link
                     <span class="pp-social-icon"itemscope itemtype="http://schema.org/Organization">
                       <link itemprop="url" href=""/>
                       <a class = "pp-social-icon" itemprop="sameAs" href="https://www.youtube.com/" target="_blank" title="YouTube"
@@ -673,127 +709,128 @@ function sendEmail (event, done) {
                       </a>
                     </span>
                     -->
-                    <br/>
-                      Snap Booth Photos<br />
-                      <a href="tel:">(734) 707-7794</a> 
+                                <br />
+                                Snap Booth Photos<br />
+                                <a href="tel:">(734) 707-7794</a>
 
-                    
 
-                    </p>
+
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
 
 
 
 
-          <!--Footer (X 0 0)-->
-          <div class="fl-col fl-node-59078ee664ebb fl-col-small" data-node="59078ee664ebb">
-            <div class="fl-col-content fl-node-content">
-              <div class="fl-module fl-module-rich-text fl-node-59079271d91c2" data-node="59079271d91c2">
-                <div class="fl-module-content fl-node-content">
-                  <div class="fl-rich-text">
+                  <!--Footer (X 0 0)-->
+                  <div class="fl-col fl-node-59078ee664ebb fl-col-small" data-node="59078ee664ebb">
+                    <div class="fl-col-content fl-node-content">
+                      <div class="fl-module fl-module-rich-text fl-node-59079271d91c2" data-node="59079271d91c2">
+                        <div class="fl-module-content fl-node-content">
+                          <div class="fl-rich-text">
 
-                    <!--Event Type Site Links-->
-                    <h4>Event Types</h4>
-                    <ul>
-                      <li><a href="Corporate-Rentals.html">Corporate Events</a></li>
-                      <li><a href="Wedding-Rentals.html">Weddings</a></li>
-                      <li><a href="Party-Rentals.html">Parties</a></li>
-                      <li><a href="Graduation-Rentals.html">Graduation Parties</a></li>
-                      <li>Charity Functions</li>
-                      <li>Bar &amp; Bat Mitzvahs</li>
-                      <li>School Events &amp; Prom</li>
-                    </ul>
+                            <!--Event Type Site Links-->
+                            <h4>Event Types</h4>
+                            <ul>
+                              <li><a href="Corporate-Rentals.html">Corporate Events</a></li>
+                              <li><a href="Wedding-Rentals.html">Weddings</a></li>
+                              <li><a href="Party-Rentals.html">Parties</a></li>
+                              <li><a href="Graduation-Rentals.html">Graduation Parties</a></li>
+                              <li>Charity Functions</li>
+                              <li>Bar &amp; Bat Mitzvahs</li>
+                              <li>School Events &amp; Prom</li>
+                            </ul>
 
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <!--Footer (0 X 0)-->
-          <div class="fl-col fl-node-59078ee664f2e fl-col-small" data-node="59078ee664f2e">
-            <div class="fl-col-content fl-node-content">
-              <div class="fl-module fl-module-rich-text fl-node-59078ee664ffa" data-node="59078ee664ffa">
-                <div class="fl-module-content fl-node-content">
-                  <div class="fl-rich-text">
-                    <!--Site Links-->
-                    <h4>Links</h4>
-                    <ul>
-                      <li><a href="/RatesAvailability.html">Contact</a></li>
-                      <li> <a href="/FAQs.html">FAQ</a> </li>
-                      <li> <a href="/photo-booth-rental-guide.html">Rental Guide</a> </li>
-                      <li> <a href="/testimonials.html">Testimonials</a> </li>
-                    </ul>
+                  <!--Footer (0 X 0)-->
+                  <div class="fl-col fl-node-59078ee664f2e fl-col-small" data-node="59078ee664f2e">
+                    <div class="fl-col-content fl-node-content">
+                      <div class="fl-module fl-module-rich-text fl-node-59078ee664ffa" data-node="59078ee664ffa">
+                        <div class="fl-module-content fl-node-content">
+                          <div class="fl-rich-text">
+                            <!--Site Links-->
+                            <h4>Links</h4>
+                            <ul>
+                              <li><a href="/RatesAvailability.html">Contact</a></li>
+                              <li> <a href="/FAQs.html">FAQ</a> </li>
+                              <li> <a href="/photo-booth-rental-guide.html">Rental Guide</a> </li>
+                              <li> <a href="/testimonials.html">Testimonials</a> </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
+
+
                 </div>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-        <!-------------End(X X X)Footer----------------->
+                <!-------------End(X X X)Footer----------------->
 
 
 
-        <div class="fl-module fl-module-rich-text fl-node-59078ee664e3f" data-node="59078ee664e3f">
-          <div class="fl-module fl-module-rich-text fl-node-59078ee664e3f" data-node="59078ee664e3f">
-            <div class="fl-module-content fl-node-content">
-              <div class="fl-rich-text">
-                <h4 style="text-align: left">Surrounding Areas</h4>
-                <div id="header">
-                  <div id="subFooter">
-                    <div class="subFooterBkg">
-                      <div class="subShoe">
-                        <p>
-                          <span style="font-size: 14px">
-                            <a href="Cities/photo-booth-ann-arbor.html">Ann Arbor</a> |
-                            <a href="Cities/photo-booth-milan-mi.html">Milan</a> |
-                            <a href="Cities/photo-booth-ypsilanti-mi.html">Ypsilanti</a> |
-                            <a href="Cities/photo-booth-saline-mi.html">Saline</a> |
-                            <a href="Cities/photo-booth-tecumseh-mi.html">Tecumseh</a> |
-                            <a href="Cities/photo-booth-adrian-mi.html">Adrian</a> |
-                            <a href="Cities/photo-booth-novi-mi.html">Novi</a> |                        
-                            <a href="Cities/photo-booth-chelsea-mi.html">Chelsea</a> |
-                            <a href="Cities/photo-booth-toledo-oh.html">Toledo</a> |
-                            <a href="Cities/photo-booth-bryan-oh.html">Bryan</a> |
-                            <a href="Cities/photo-booth-angola-in.html">Angola</a> |
-                            <a href="Cities/photo-booth-fremont-in.html">Fremont</a> 
-                          </span>
-                        </p>
+                <div class="fl-module fl-module-rich-text fl-node-59078ee664e3f" data-node="59078ee664e3f">
+                  <div class="fl-module fl-module-rich-text fl-node-59078ee664e3f" data-node="59078ee664e3f">
+                    <div class="fl-module-content fl-node-content">
+                      <div class="fl-rich-text">
+                        <h4 style="text-align: left">Surrounding Areas</h4>
+                        <div id="header">
+                          <div id="subFooter">
+                            <div class="subFooterBkg">
+                              <div class="subShoe">
+                                <p>
+                                  <span style="font-size: 14px">
+                                    <a href="Cities/photo-booth-ann-arbor.html">Ann Arbor</a> |
+                                    <a href="Cities/photo-booth-milan-mi.html">Milan</a> |
+                                    <a href="Cities/photo-booth-ypsilanti-mi.html">Ypsilanti</a> |
+                                    <a href="Cities/photo-booth-saline-mi.html">Saline</a> |
+                                    <a href="Cities/photo-booth-tecumseh-mi.html">Tecumseh</a> |
+                                    <a href="Cities/photo-booth-adrian-mi.html">Adrian</a> |
+                                    <a href="Cities/photo-booth-novi-mi.html">Novi</a> |
+                                    <a href="Cities/photo-booth-chelsea-mi.html">Chelsea</a> |
+                                    <a href="Cities/photo-booth-toledo-oh.html">Toledo</a> |
+                                    <a href="Cities/photo-booth-bryan-oh.html">Bryan</a> |
+                                    <a href="Cities/photo-booth-angola-in.html">Angola</a> |
+                                    <a href="Cities/photo-booth-fremont-in.html">Fremont</a>
+                                  </span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>
-</div>
-          </div>
-        </div>
-      </div>
-      <!-------------End Big Middle Footer----------------->
-      <div class="uabb-js-breakpoint" style="display: none"></div>
-<!-----------------------------------END FOOTER------------------------------------------------------------------------------------------------------------------------->
+  <!-------------End Big Middle Footer----------------->
+  <div class="uabb-js-breakpoint" style="display: none"></div>
+  <!-----------------------------------END FOOTER------------------------------------------------------------------------------------------------------------------------->
 
-      <link rel="stylesheet" id="fl-builder-layout-24418-css" href="CSS/wp-content/uploads/bb-plugin/cache/24418-layout-partial.css" media="all">
+  <link rel="stylesheet" id="fl-builder-layout-24418-css"
+    href="CSS/wp-content/uploads/bb-plugin/cache/24418-layout-partial.css" media="all">
 
 
 
-      
-    </div>
-    <!--END PAGE CONTENT-->
+
+  </div>
+  <!--END PAGE CONTENT-->
 
 
 
@@ -804,89 +841,152 @@ function sendEmail (event, done) {
 
 
 
-    <!-- .fl-page -->
-    <noscript>
-      <img
-        height="1"
-        width="1"
-        style="display: none"
-        src="https://www.facebook.com/tr?id=297033134396801&amp;ev=PageView&amp;noscript=1"
-      />
-    </noscript>
+  <!-- .fl-page -->
+  <noscript>
+    <img height="1" width="1" style="display: none"
+      src="https://www.facebook.com/tr?id=297033134396801&amp;ev=PageView&amp;noscript=1" />
+  </noscript>
 
-    <script src="JS/wp-content/uploads/bb-plugin/cache/24290-layout.js" id="fl-builder-layout-24290-js"></script>
-    <script src="JS/wp-content/plugins/bb-plugin/js/jquery.ba-throttle-debounce.min.js"id="jquery-throttle-js"></script>
-    <script src="JS/wp-content/plugins/bb-plugin/js/jquery.magnificpopup.min.js"id="jquery-magnificpopup-js"></script>
-    <script src="JS/wp-content/themes/bb-theme/js/bootstrap.min.js"id="bootstrap-js"></script>
-    <script id="fl-automator-js-extra">var themeopts = { medium_breakpoint: "992", mobile_breakpoint: "768" };</script>
-    <script src="JS/wp-content/themes/bb-theme/js/theme.min.js" id="fl-automator-js"></script>
-    <script src="JS/wp-includes/js/wp-embed.min.js"id="wp-embed-js"></script>
-    <script src="JS/wp-content/uploads/bb-plugin/cache/24416-layout-partial.js"id="fl-builder-layout-24416-js"></script>
-    <script src="JS/wp-content/uploads/bb-plugin/cache/24418-layout-partial.js"id="fl-builder-layout-24418-js"></script>
+  <script src="JS/wp-content/uploads/bb-plugin/cache/24290-layout.js" id="fl-builder-layout-24290-js"></script>
+  <script src="JS/wp-content/plugins/bb-plugin/js/jquery.ba-throttle-debounce.min.js" id="jquery-throttle-js"></script>
+  <script src="JS/wp-content/plugins/bb-plugin/js/jquery.magnificpopup.min.js" id="jquery-magnificpopup-js"></script>
+  <script src="JS/wp-content/themes/bb-theme/js/bootstrap.min.js" id="bootstrap-js"></script>
+  <script id="fl-automator-js-extra">var themeopts = { medium_breakpoint: "992", mobile_breakpoint: "768" };</script>
+  <script src="JS/wp-content/themes/bb-theme/js/theme.min.js" id="fl-automator-js"></script>
+  <script src="JS/wp-includes/js/wp-embed.min.js" id="wp-embed-js"></script>
+  <script src="JS/wp-content/uploads/bb-plugin/cache/24416-layout-partial.js" id="fl-builder-layout-24416-js"></script>
+  <script src="JS/wp-content/uploads/bb-plugin/cache/24418-layout-partial.js" id="fl-builder-layout-24418-js"></script>
 
-    <script id="aepc-pixel-events-js-extra">
-      var aepc_pixel_events = {
-        custom_events: {
-          AdvancedEvents: [
-            {
-              params: {
-                login_status: "not_logged_in",
-                post_type: "page",
-                object_id: 24290,
-                object_type: "page",
-              },
+  <script id="aepc-pixel-events-js-extra">
+    var aepc_pixel_events = {
+      custom_events: {
+        AdvancedEvents: [
+          {
+            params: {
+              login_status: "not_logged_in",
+              post_type: "page",
+              object_id: 24290,
+              object_type: "page",
             },
-          ],
-        },
-        api: {
-          root: "",
-          nonce: "",
-        },
-      };
-    </script>
-    <script src="Components/navBar.js"></script>
-    <script src="Components/footer.js"></script>
+          },
+        ],
+      },
+      api: {
+        root: "",
+        nonce: "",
+      },
+    };
+  </script>
+  <script src="Components/navBar.js"></script>
+  <script src="Components/footer.js"></script>
 
-    <script src="JS/wp-content/plugins/pixel-caffine/build/frontend/frontend.js" id="aepc-pixel-events-js"></script>
-
-
-
-
-
-    
-      <script src='JS/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
-      <script src='JS/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
-  
-
-    
+  <script src="JS/wp-content/plugins/pixel-caffine/build/frontend/frontend.js" id="aepc-pixel-events-js"></script>
 
 
 
-<!--**************************FIREBASE CONFIG******************************************************-->
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyCoSxR4qkdQhHvvC6YIcRii2vsm8rtu0Vk",
-    authDomain: "snap-booth-photos.firebaseapp.com",
-    databaseURL: "https://snap-booth-photos-default-rtdb.firebaseio.com",
-    projectId: "snap-booth-photos",
-    storageBucket: "snap-booth-photos.appspot.com",
-    messagingSenderId: "350438842610",
-    appId: "1:350438842610:web:dc05af5e1b118c1e7b706b",
-    measurementId: "G-BZW342QWVY"
-  };
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
-      
-  </body>
+
+  <script src='JS/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
+  <script src='JS/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
+
+
+
+
+  <script>
+    // Add the following script before the closing body tag
+    // After loading the DOM tree (page)
+    $(function () {
+      //when clicking on a link containing a Thumbnail
+      $('a.thumbnail').click(function (e) {
+        console.log("test");
+        //cancel the default browser action
+        e.preventDefault();
+        //set the scr attribute of the modal's img element
+        //the value of the scr attribute of the image that is wrapped around the a element clicked by the user
+       // $('#image-modal .modal-body img').attr('src', $(this).find('img').attr('src'));
+       // $('#myModal .modal-body img').attr('id', $(this).find('img').attr('id'));
+        document.getElementById("modalBodyText").innerHTML = "Wedding Tester";
+
+        switch ($(this).find('img').attr('id')) {
+          case "Wedding":
+            document.getElementById("post-text").innerHTML = "A Covid-19 contact tracing program. Users can log in or create an account using Google Auth. Once logged in, users can keep track of guests via a check in/check out system stored globally in Firbase that could be used for Covid-19 contact tracing ";
+            document.getElementById("post-intro").innerHTML = "Technology Used:";
+            document.getElementById("post-outro").innerHTML = "HTML,CSS, Javascript, Google User Authentication, Firebase, and AWS:(S3, Route53, & API Gateway)";
+            document.getElementById("demoLink").innerHTML = "Live Demo";
+            document.getElementById("demoLink").href = "/CovidContactTracer";
+            document.getElementById("codeLink").innerHTML = "View Code";
+            document.getElementById("codeLink").href = "https://github.com/griffisr/CovidContactTracer";
+            break;
+          case "Peppers Mexican Grill":
+            document.getElementById("post-text").innerHTML = "A webpage designed for a local mexican restaurant";
+            document.getElementById("post-intro").innerHTML = "Technology Used:";
+            document.getElementById("post-outro").innerHTML = "HTML,CSS, Javascript, and AWS:(S3, Route53, & API Gateway)";
+            document.getElementById("demoLink").innerHTML = "Live Demo";
+            document.getElementById("demoLink").href = "http://www.peppersmexicangrill.net/";
+            document.getElementById("codeLink").innerHTML = "View Code";
+            document.getElementById("codeLink").href = "https://github.com/griffisr/Peppers-Website";
+            break;
+          case "Snap Booth Photos":
+            document.getElementById("post-text").innerHTML = "A multi-page website for my personal business utilizing real time Google Analytics to guide marketing. The emphasis for this project, in addition to pleasing UI, was to build out user tracking via analytics calls to track customer conversion.";
+            document.getElementById("post-intro").innerHTML = "Technology Used:";
+            document.getElementById("post-outro").innerHTML = "HTML,CSS, Javascript,Google Analytics and AWS:(S3, Route53, Lambda, SES, & API Gateway)";
+            document.getElementById("demoLink").innerHTML = "Live Demo";
+            document.getElementById("demoLink").href = "http://snapboothphotos.com/";
+            document.getElementById("codeLink").innerHTML = "View Code";
+            document.getElementById("codeLink").href = "https://github.com/griffisr/PhotoboothNew";
+            break;
+          case "Counting Kards":
+            document.getElementById("post-text").innerHTML = "A simple cards-based kanban board app heavily inspired by Trello in Vanilla JS. Users can create boards, which hold cards, which can hold items which can be dragged around cards.";
+            document.getElementById("post-intro").innerHTML = "Technology Used:";
+            document.getElementById("post-outro").innerHTML = "HTML,CSS, Javascript";
+            document.getElementById("demoLink").innerHTML = "Live Demo";
+            document.getElementById("demoLink").href = "/trello-clone";
+            document.getElementById("codeLink").innerHTML = "View Code";
+            document.getElementById("codeLink").href = "https://github.com/griffisr/trello-clone";
+            break;
+          case "Space Memory Game":
+            document.getElementById("post-text").innerHTML = "A simple cards-based memory game in Vanilla JS. Users try and match up space images on the back of cards in the shortest time and least amount of moves. The leaderboard is stored globally via firebase DB so anyone can play and make it on the board";
+            document.getElementById("post-intro").innerHTML = "Technology Used:";
+            document.getElementById("post-outro").innerHTML = "Bootstrap, Firebase, HTML,CSS, Javascript";
+            document.getElementById("demoLink").innerHTML = "Live Demo";
+            document.getElementById("demoLink").href = "/memory-game";
+            document.getElementById("codeLink").innerHTML = "View Code";
+            document.getElementById("codeLink").href = "https://github.com/griffisr/memory-game";
+            break;
+
+        }
+
+      });
+    })
+  </script>
+
+  <!--**************************FIREBASE CONFIG******************************************************-->
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCoSxR4qkdQhHvvC6YIcRii2vsm8rtu0Vk",
+      authDomain: "snap-booth-photos.firebaseapp.com",
+      databaseURL: "https://snap-booth-photos-default-rtdb.firebaseio.com",
+      projectId: "snap-booth-photos",
+      storageBucket: "snap-booth-photos.appspot.com",
+      messagingSenderId: "350438842610",
+      appId: "1:350438842610:web:dc05af5e1b118c1e7b706b",
+      measurementId: "G-BZW342QWVY"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
+</body>
+
 </html>
