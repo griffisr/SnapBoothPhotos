@@ -1,5 +1,5 @@
-.transition, #faqqs li i:before, #faqqs li i:after, p {
-    transition: all 0.25s ease-in-out;
+.transition, #faqqs li i:before, #faqqs li i:after, p , div{
+    transition: all 0.20s ease-in-out;
   }
   
   .flipIn, #faqqs li, h1 {
@@ -42,17 +42,6 @@
     transform: translate(0, 0);
     margin-top: 14px;
     z-index: 2;
-  }
-
-  .faqContent{
-    position: relative;
-    overflow: hidden;
-    max-height: 800px;
-    opacity: 1;
-    transform: translate(0, 0);
-    margin-top: 14px;
-    z-index: 2;
-
   }
   
   #faqqs {
@@ -114,6 +103,19 @@
     opacity: 0;
     transform: translate(0, 50%);
   }
+  #faqqs li input[type=checkbox]:checked ~ img {
+    margin-top: 0;
+    max-height: 0;
+    opacity: 0;
+    transform: translate(0, 50%);
+  }
+  #faqqs li input[type=checkbox]:checked ~ div {
+    margin-top: 0;
+    max-height: 0;
+    opacity: 0;
+    transform: translate(0, 50%);
+  }
+  
   #faqqs li input[type=checkbox]:checked ~ i:before {
     transform: translate(2px, 0) rotate(45deg);
   }
@@ -146,5 +148,18 @@
   }
 
   .setupImg{
-    width: 150px;
+    width: 65%;
+    height: 250px;
+    padding-left: 20px;
   }
+
+  .faqDiv{
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  }
+
+
+  
