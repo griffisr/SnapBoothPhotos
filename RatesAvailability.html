@@ -202,17 +202,20 @@
                                 <div class="modal-content">
                                   <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title" id="modal-title">Modal Header</h4>
+                                    <h3 class="modal-title" id="modal-title">Modal Header</h3>
                                   </div>
                                   <div class="modal-body">
                                     <img class="img-responsive center-block modalImg" src="" alt="imgalt" id="modal-image">
+                                    <br>
+                                    
+                                    <p id="modalBodyText"></p>
                                     <h1 id="modalBodyTitle"></h1>
+
                                     <h4 id="includedPackage"></h4>
                                     <h4>&#9900;Complimentary set-up time 1 hour prior to event</h4>
                                     <h4>&#9900;Customized graphics for photo booth and strips</h4>
                                     <h4>&#9900;Complimentary flash drive given directly after the
                                       event filled with all your photos!</h4>
-                                    <p id="modalBodyText"></p>
                                     
                                   </div>
                                   <div class="modal-footer">
@@ -914,7 +917,7 @@ function sendEmail (event, done) {
        {
         document.getElementById("modal-image").src = ($(this).find('img').attr('src'));
         document.getElementById("modalBodyTitle").innerHTML = "Hourly Rental Package Includes:";
-        document.getElementById("modalBodyText").innerHTML = "Hourly photo booth rentals are perfect for shorter events with a clear start and end time. (i.e.: Birthdays, Graduation Open House, Corporate Parties, etc) Hourly rates vary depending om the size of your event so reach out today for your free quote!";
+        document.getElementById("modalBodyText").innerHTML = "Hourly photo booth rentals are perfect for shorter events with a clear start and end time. <em>(i.e.: Birthdays, Graduation Open House, Corporate Parties, etc)</em> Hourly rates vary depending om the size of your event so reach out today for your free quote!";
         document.getElementById("modal-title").innerHTML = "Photo Booth Rental by the hour";
 
        }
@@ -923,7 +926,7 @@ function sendEmail (event, done) {
         document.getElementById("modal-image").src = ($(this).find('img').attr('src'));
         document.getElementById("modalBodyTitle").innerHTML = "All Inclusive Rental includes:"
         document.getElementById("includedPackage").innerHTML = "&#9900;•Photo Booth rental included for your entire event with unlimted prints for your guests";
-        document.getElementById("modalBodyText").innerHTML = "Our all inclusive package is ideal for longer events <em>(4+ hours)</em> where you don't want to worry about running out of time with your booth! This package is also perfect for longer events that may have down time where your guests aren't necessarily taking photos the entire time.<em>(i.e.: During your Wedding ceremeony, during dinner, etc)</em>";
+        document.getElementById("modalBodyText").innerHTML = "Our all inclusive package is ideal for longer events <em>(4+ hours)</em> where you don't want to worry about running out of time with your booth! This package is also perfect for longer events that may have down time where your guests aren't necessarily taking photos the entire time.<br><em>(i.e.: During your Wedding ceremeony, during dinner, etc)</em>";
         document.getElementById("modal-title").innerHTML = "All Inclusive Photo Booth Rental";
        }
         
