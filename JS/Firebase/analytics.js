@@ -38,6 +38,41 @@ function clickedInclusive(){
 
 function quoteFormStarted(placeInForm) {
   console.log(placeInForm)
-  firebase.analytics().logEvent('Test_Form_' + placeInForm);
+  firebase.analytics().logEvent('COMPLETED_' + placeInForm + '_FORM_FIELD');
 
 }
+
+
+/* DETECTS WHEN A USER HAS SCROLLED MORE THAN HALF WAY DOWN A PAGE AND RECORDS [1] EVENT WHEN THEY'VE SCROLLED */
+
+let scrolling = false;
+let notScrolled = true;
+var winWidth = window.innerWidth;
+var winHeight = window.innerHeight;
+
+window.onscroll = function(event) {
+
+  if(notScrolled)
+  {
+    scrolling = true;
+  }
+
+setInterval(() => {
+    if (scrolling) {
+        scrolling = false;
+        // place the scroll handling logic here
+        if(winWidth < 800 & window.pageYOffset>(winHeight / 2) )
+        {
+          //firebase.analytics().logEvent(this.document.title + '_MOBILE_ENGAGED_SCROLL');
+          console.log("scroll test works")
+          notScrolled = false;
+        }
+
+        
+    }
+},600);
+
+};
+
+
+/* ENDS SCROLLING DETECTIONS AND EVENT LOGGING*/
