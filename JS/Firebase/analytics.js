@@ -63,8 +63,8 @@ setInterval(() => {
         // place the scroll handling logic here
         if(winWidth < 800 & window.pageYOffset>(winHeight / 2) )
         {
-          //firebase.analytics().logEvent(this.document.title + '_MOBILE_ENGAGED_SCROLL');
-          console.log("scroll test works")
+          firebase.analytics().logEvent(this.document.title + '_MOBILE_ENGAGED_SCROLL');
+          //console.log("scroll test works")
           notScrolled = false;
         }
 
