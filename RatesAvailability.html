@@ -35,18 +35,21 @@
     media='all' />
   <link rel='stylesheet' id='foundation-icons-css'
     href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css?ver=2.4.2.2' media='all' />
+
+
+    <script src='JS/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
+<script src='JS/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
+
+    <!--Initialize Firebase-->
+  <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-analytics.js"></script>
 </head>
 
 
 <!--Nav Bar Component-->
 <app-button id="template-tester"></app-button>
 
-<script src='JS/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
-<script src='JS/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
 
-    <!--Initialize Firebase-->
-  <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-analytics.js"></script>
 
 <script>
   function submitToAPI(e) {
@@ -330,8 +333,6 @@
                     
                         
                     </div>
-
-
 
 
                       <input type="hidden" name="frm_action" value="create" />
