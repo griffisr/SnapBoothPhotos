@@ -10,9 +10,9 @@
   <script src='JS/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
 
     <!--Initialize Firebase-->
-  <script src="https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.8.3/firebase-database.js"></script>
-  <script src='JS/Firebase/analytics.js'></script>
+  <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-analytics.js"></script>
+  
 
   <body class="page-template-default page page-id-24290 fl-builder fl-framework-bootstrap fl-preset-default fl-full-width" itemscope="itemscope" itemtype="https://schema.org/WebPage">
       
@@ -51,6 +51,12 @@
                     </div>
 
                   </div>
+
+                  <div class="pp-dual-button-2 pp-dual-button pp-button-effect-none">
+                    <a href="#" onclick="clickedHourly()" class="pp-button " role="button" target="_self" onclick="">
+                     <span class="pp-button-2-text">Find Out More</span>
+                   </a>
+                 </div>
 
 
 
@@ -148,10 +154,10 @@
     <script src='JS/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
     <script src='JS/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
 
-    
+    <script src='JS/Firebase/analytics.js'></script>
 
 
-    <!--**************************FIREBASE CONFIG******************************************************-->
+    <!--**************************FIREBASE CONFIG*************
 <script type="module">
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js";
@@ -175,6 +181,6 @@
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
-</script>
+</script>*****************************************-->
   </body>
 </html>
