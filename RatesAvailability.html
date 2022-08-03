@@ -281,22 +281,37 @@
                        class="input-field" 
                        type="text" 
                        name="name"
-                       onchange   = "quoteFormStarted(this.id);"
+                       onchange   = "quoteFormStarted(this.name);"
                        onpaste    = "this.onchange();">
 
                       <label>Email</label>
-                      <input id="email-input" class="input-field" type="text" name="email">
+                      <input id="email-input" 
+                      class="input-field" 
+                      type="text" 
+                      name="email"
+                      onchange   = "quoteFormStarted(this.name);"
+                      onpaste    = "this.onchange();">
 
                       <label>Event Date</label>
-                      <input id="subject-input" class="input-field" type="date" name="subject">
+                      <input id="subject-input" 
+                      class="input-field" 
+                      type="date" 
+                      name="subject"
+                      onchange   = "quoteFormStarted('EventDate');"
+                      onpaste    = "this.onchange();">
 
                       <div id="frm_field_13604_container" class="form-field  frm_required_field  frm_top_container">
                         <label class="frm_pos_ frm_primary_label">* Event City &amp; State
                             <span class="frm_required">*</span>
                         </label>
-                        <input type="text" id="citySTATE" name="citySTATE" value=""  data-reqmsg="Please enter"  />
-                    
-                        
+                        <input 
+                        type="text" 
+                        id="citySTATE" 
+                        name="citySTATE" 
+                        value=""  
+                        data-reqmsg="Please enter" 
+                        onchange   = "quoteFormStarted(this.name);"
+                        onpaste    = "this.onchange();" />  
                     </div>
 
 
@@ -305,10 +320,15 @@
                         <label for="eventDesc" class="frm_primary_label">* Event Type/Description
                           <span class="frm_required">*</span>
                         </label>
-                        <input type="text" id="eventDesc" name="eventDesc" value=""
-                          data-reqmsg="This field cannot be blank."
-                          placeholder="(i.e., Wedding, Corporate Party, etc.)" />
-
+                        <input 
+                        type="text" 
+                        id="eventDesc" 
+                        name="eventDesc" 
+                        value=""
+                        data-reqmsg="This field cannot be blank."
+                        placeholder="(i.e., Wedding, Corporate Party, etc.)" 
+                        onchange   = "quoteFormStarted(this.name);"
+                        onpaste    = "this.onchange();"/>
                       </div>
 
                       <div id="frm_field_13606_container" class="form-field  frm_required_field  frm_top_container">
