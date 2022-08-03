@@ -61,18 +61,23 @@ setInterval(() => {
     if (scrolling) {
         scrolling = false;
         // place the scroll handling logic here
-        if(winWidth < 800 & window.pageYOffset>(winHeight / 2) )
-        {
-          firebase.analytics().logEvent(this.document.title + '_MOBILE_ENGAGED_SCROLL');
-          //console.log("scroll test works")
-          notScrolled = false;
-        }
 
-        
+        //Mobile screens -> When user scrolls more than the page, consider them engaged and log an event
+        if(winWidth < 800 & (winHeight - window.pageYOffset) < 0  )
+        {
+         firebase.analytics().logEvent(this.document.title + '_MOBILE_ENGAGED_SCROLL');
+         //console.log("scroll test works")
+         notScrolled = false;
+         //console.log(winHeight - window.pageYOffset)
+        }
+        //Web screens -> When user scrolls more than the page, consider them engaged and log an event
+        else if(winWidth >= 800 & (winHeight - window.pageYOffset) < 0)
+        {
+         firebase.analytics().logEvent(this.document.title + '_WEB_ENGAGED_SCROLL');
+        // console.log(winHeight - window.pageYOffset)
+         notScrolled = false;
+        }
     }
 },600);
-
 };
-
-
 /* ENDS SCROLLING DETECTIONS AND EVENT LOGGING*/
