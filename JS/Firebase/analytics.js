@@ -23,25 +23,26 @@
  //const app = initializeApp(firebaseConfig);
 // const analytics = getAnalytics(app);
 
+function clickedCTA(){
+  firebase.analytics().logEvent('LANDING_CTA_CLICKED');
+}
 
 function clickedHourly(){
-
   firebase.analytics().logEvent('HOURLY_INFORMATION_CLICKED');
-
 }
 
 function clickedInclusive(){
-
   firebase.analytics().logEvent('INCLUSIVE_INFORMATION_CLICKED');
-
 }
 
 function quoteFormStarted(placeInForm) {
-  console.log(placeInForm)
   firebase.analytics().logEvent('COMPLETED_' + placeInForm + '_FORM_FIELD');
-
 }
 
+
+function requestedQuote () {
+  firebase.analytics().logEvent('QUOTE_REQUESTED');
+}
 
 /* DETECTS WHEN A USER HAS SCROLLED MORE THAN HALF WAY DOWN A PAGE AND RECORDS [1] EVENT WHEN THEY'VE SCROLLED */
 
@@ -62,20 +63,22 @@ setInterval(() => {
         scrolling = false;
         // place the scroll handling logic here
 
+        //console.log(winHeight + " - " + window.pageYOffset + " = " + (winHeight - window.pageYOffset))
+        
         //Mobile screens -> When user scrolls more than the page, consider them engaged and log an event
         if(winWidth < 800 & (winHeight - window.pageYOffset) < 0  )
         {
-         firebase.analytics().logEvent(this.document.title + '_MOBILE_ENGAGED_SCROLL');
+         firebase.analytics().logEvent(this.document.title + '_MOBILE_SCROLL');
          //console.log("scroll test works")
-         notScrolled = false;
+        notScrolled = false;
          //console.log(winHeight - window.pageYOffset)
         }
         //Web screens -> When user scrolls more than the page, consider them engaged and log an event
-        else if(winWidth >= 800 & (winHeight - window.pageYOffset) < 0)
+        else if(winWidth >= 800 & (winHeight - window.pageYOffset) < (winHeight - 75) )
         {
-         firebase.analytics().logEvent(this.document.title + '_WEB_ENGAGED_SCROLL');
-        // console.log(winHeight - window.pageYOffset)
-         notScrolled = false;
+        firebase.analytics().logEvent(this.document.title + '_WEB_SCROLL');
+        //console.log(winHeight - window.pageYOffset + "counting as engaged")
+        notScrolled = false;
         }
     }
 },600);

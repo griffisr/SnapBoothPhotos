@@ -2,7 +2,8 @@
 <html lang="en-US">
 
 <head>
-  <title>Snap Booth || RESERVATIONS</title>
+  <title>TEST805</title>
+ <!-- <title>Snap Booth || EXAMPLES</title> -->
   <!--Favicon -->
   <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/128/3004/3004613.png">
 
@@ -50,74 +51,6 @@
 
 
 
-<script>
-  function submitToAPI(e) {
-
-
-
-
-
-    e.preventDefault();
-    var URL = "https://vpppichqf5.execute-api.us-east-2.amazonaws.com/prod/email";
-
-
-    var name = document.getElementById("name-input").value;
-    var email = document.getElementById("email-input").value;
-    var subject = document.getElementById("subject-input").value;
-    var location = document.getElementById("citySTATE").value;
-    var eventDesc = document.getElementById("eventDesc").value;
-    var guestCount = document.getElementById("guestCount").value;
-
-
-    var foundUs = document.getElementById("field_t1zhai").value
-
-
-    var message = document.getElementById("message-input").value;
-
-
-    var data = {
-      name: name,
-      subject: subject,
-      email: email,
-      location: location,
-      eventDesc: eventDesc,
-      guestCount: guestCount,
-      foundUs: foundUs,
-      message: message
-    };
-
-    if (name == "" || subject == "" || email == "" || location == "" || eventDesc == "" || guestCount == "" || foundUs == "") {
-      console.log(data)
-      alert("Please Fill All Required Field");
-      return false;
-    }
-
-
-
-
-
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("POST", "https://vpppichqf5.execute-api.us-east-2.amazonaws.com/prod/email");
-    xmlhttp.setRequestHeader("Content-Type", "application/json");
-
-    xmlhttp.send(JSON.stringify(data));
-    xmlhttp.onreadystatechange = function () {
-      if (xmlhttp.readyState === 4) {
-        var response = JSON.parse(xmlhttp.responseText);
-        if (xmlhttp.status === 200) {
-          console.log('successful');
-          window.location.href = "/thank-you.html";
-        } else {
-          console.log('failed');
-        }
-      }
-    }
-
-    document.getElementById('contact-form').reset();
-
-
-  }
-</script>
 
 
 
@@ -149,7 +82,7 @@
                           <a href="#contact-form">
                             <h1 class="fl-heading">
                               <span class="fl-heading-text">
-                                Request a Quote today!
+                                Photo Strip Examples
                               </span>
                             </h1>
                           </a>
@@ -158,17 +91,6 @@
                     </div>
                   </div>
                 </div>
-
-
-                <!--Left Side-->
-
-                <div class="fl-col fl-node-58eb127f354c6" data-node="58eb127f354c6">
-                  <div class="fl-col-content fl-node-content">
-                    <div class="fl-module fl-module-callout fl-node-58eb115d1748d" data-node="58eb115d1748d">
-                      <div class="fl-module-content fl-node-content">
-                        <div class="fl-callout fl-callout-left">
-                          <div class="fl-callout-content">
-
 
 
 
@@ -185,17 +107,8 @@
                                     <h3 class="modal-title" id="modal-title">Modal Header</h3>
                                   </div>
                                   <div class="modal-body">
-                                    <img class="img-responsive center-block modalImg" src="" alt="imgalt" id="modal-image">
+                                    <img class="img-responsive center-block modalImg" src="" alt="imgalt" id="modal-image" style=" border: 2px solid #555;">
                                     <br>
-                                    
-                                    <p id="modalBodyText"></p>
-                                    <h2 id="modalBodyTitle"></h2>
-
-                                    <h4 id="includedPackage"></h4>
-                                    <h4>&#9900;Complimentary set-up time 1 hour prior to event</h4>
-                                    <h4>&#9900;Customized graphics for photo booth and strips</h4>
-                                    <h4>&#9900;Complimentary flash drive given directly after the
-                                      event filled with all your photos!</h4>
                                     
                                   </div>
                                   <div class="modal-footer">
@@ -208,26 +121,48 @@
 
                             <div class="cards-list">
 
-                              <a href="#" class="thumbnail" style="border: none;" onclick="clickedHourly()">
-                                <div class="card 1" data-toggle="modal" data-target="#myModal">
-                                  <div class="card_image">
-                                    <img id="wedding" src="Images/Logos/darkBackgroundLogo.jpg" />
+                              <a href="#" class="thumbnail" style="border: none; width: 200px; height: 600px;">
+                                <div class="card 1" data-toggle="modal" data-target="#myModal" style="border: none; width: 200px; height: 600px;">
+                                  <div class="card_image" style="border: none; width: 200px; height: 600px;">
+                                    <img id="wedding" src="Images/SmithPhotoStrip.png" style="border: none; width: 200px; height: 600px;"/>
                                   </div>
                                   <div class="card_title title-white">
-                                    <p>HOURLY</p>
+                                    <p style="font-size: 15px;">HOURLY</p>
                                   </div>
                                 </div>
 
                               </a>
                               
 
-                              <a href="#" class="thumbnail" style="border: none;" onclick="clickedInclusive()">
-                                <div class="card 2" data-toggle="modal" data-target="#myModal">
-                                  <div class="card_image">
-                                    <img id="wedding" src="Images/Promo/Setup.jpg" />
+                              <a href="#" class="thumbnail" style="border: none; width: 200px; height: 600px;">
+                                <div class="card 2" data-toggle="modal" data-target="#myModal" style="border: none; width: 200px; height: 600px;">
+                                  <div class="card_image" style="border: none; width: 200px; height: 600px;">
+                                    <img id="wedding" src="Images/Photo Strip2.png"  style="border: none; width: 200px; height: 600px;"/>
                                   </div>
                                   <div class="card_title title-white">
-                                    <p >ALL INCLUSIVE</p>
+                                    <p style="font-size: 15px;">ALL INCLUSIVE</p>
+                                  </div>
+                                </div>
+                              </a>
+
+                              <a href="#" class="thumbnail" style="border: none; width: 200px; height: 600px;">
+                                <div class="card 2" data-toggle="modal" data-target="#myModal" style="border: none; width: 200px; height: 600px;">
+                                  <div class="card_image" style="border: none; width: 200px; height: 600px;">
+                                    <img id="wedding" src="Images/Photo Strip.png" style="border: none; width: 200px; height: 600px;" />
+                                  </div>
+                                  <div class="card_title title-white">
+                                    <p style="font-size: 15px; color: black;">ALL INCLUSIVE</p>
+                                  </div>
+                                </div>
+                              </a>
+
+                              <a href="#" class="thumbnail" style="border: none; width: 200px; height: 600px;">
+                                <div class="card 2" data-toggle="modal" data-target="#myModal" style="border: none; width: 200px; height: 600px;">
+                                  <div class="card_image" style="border: none; width: 200px; height: 600px;">
+                                    <img id="wedding" src="Images/Photo Strip2.png" style="border: none; width: 200px; height: 600px;" />
+                                  </div>
+                                  <div class="card_title title-white">
+                                    <p style="font-size: 15px;" >ALL INCLUSIVE</p>
                                   </div>
                                 </div>
                               </a>
@@ -252,165 +187,6 @@
 
 
 
-
-
-
-
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!--End Left-->
-
-
-                <!--Right Side-->
-                <div class="fl-col fl-node-58eb127f35513" data-node="58eb127f35513"
-                  style="padding-left: 2%; padding-right: 2%;">
-                  <div class="fl-col-content fl-node-content">
-
-
-
-
-                    <form id="contact-form" method="POST">
-                      <label>Name</label>
-                      <input
-                       id="name-input"
-                       class="input-field" 
-                       type="text" 
-                       name="name"
-                       onchange   = "quoteFormStarted(this.name);"
-                       onpaste    = "this.onchange();">
-
-                      <label>Email</label>
-                      <input id="email-input" 
-                      class="input-field" 
-                      type="text" 
-                      name="email"
-                      onchange   = "quoteFormStarted(this.name);"
-                      onpaste    = "this.onchange();">
-
-                      <label>Event Date</label>
-                      <input id="subject-input" 
-                      class="input-field" 
-                      type="date" 
-                      name="subject"
-                      onchange   = "quoteFormStarted('EventDate');"
-                      onpaste    = "this.onchange();">
-
-                      <div id="frm_field_13604_container" class="form-field  frm_required_field  frm_top_container">
-                        <label class="frm_pos_ frm_primary_label">* Event City &amp; State
-                            <span class="frm_required">*</span>
-                        </label>
-                        <input 
-                        type="text" 
-                        id="citySTATE" 
-                        name="citySTATE" 
-                        value=""  
-                        data-reqmsg="Please enter" 
-                        onchange   = "quoteFormStarted(this.name);"
-                        onpaste    = "this.onchange();" />  
-                    </div>
-
-
-                      <div id="frm_field_19733_container"
-                        class="frm_form_field form-field  frm_required_field frm_top_container">
-                        <label for="eventDesc" class="frm_primary_label">* Event Type/Description
-                          <span class="frm_required">*</span>
-                        </label>
-                        <input 
-                        type="text" 
-                        id="eventDesc" 
-                        name="eventDesc" 
-                        value=""
-                        data-reqmsg="This field cannot be blank."
-                        placeholder="(i.e., Wedding, Corporate Party, etc.)" 
-                        onchange   = "quoteFormStarted(this.name);"
-                        onpaste    = "this.onchange();"/>
-                      </div>
-
-                      <div id="frm_field_13606_container" class="form-field  frm_required_field  frm_top_container">
-                        <label class="frm_pos_ frm_primary_label">* Number of Guests
-                            <span class="frm_required">*</span>
-                        </label>
-                        <br>
-                        <select name="guestCount" id="guestCount"  data-reqmsg="Please select" style="width: 100%;" >
-                        <option value=""  selected="selected"> </option>
-                            <option value="Less than 50" >Less than 50</option>
-                            <option value="Approximately 50-75" >Approximately 50-75</option>
-                            <option value="Approximately 75-100" >Approximately 75-100</option>
-                            <option value="Approximately 100-150" >Approximately 100-150</option>
-                            <option value="Approximately 150-200" >Approximately 150-200</option>
-                            <option value="Approximately 200-250" >Approximately 200-250</option>
-                            <option value="Approximately 250-350" >Approximately 250-350</option>
-                            <option value="Approximately 350-500" >Approximately 350-500</option>
-                            <option value="Approximately 500-1,000" >Approximately 500-1,000</option>
-                            <option value="More than 1,000" >More than 1,000</option>
-                        </select>
-                    
-                        
-                    </div>
-
-
-                      <input type="hidden" name="frm_action" value="create" />
-                      <input type="hidden" name="form_id" value="461" />
-                      <input type="hidden" name="frm_hide_fields_461" id="frm_hide_fields_461" value="" />
-                      <input type="hidden" name="form_key" value="caxvs" />
-                      <input type="hidden" name="item_meta[0]" value="" />
-                      <input type="hidden" id="frm_submit_entry_461" name="frm_submit_entry_461"
-                        value="ee485a3d3a" /><input type="hidden" name="_wp_http_referer" value="/contact-us/" />
-
-                      <div id="frm_field_13605_container" class="form-field  frm_required_field  frm_top_container">
-                        <label class="frm_pos_ frm_primary_label">* How Did You Find Us?
-                          <span class="frm_required">*</span>
-                        </label>
-                        <select name="item_meta[13605]" id="field_t1zhai"
-                          data-reqmsg="How Did You Find Us? can&#039;t be blank" style="width: 100%;">
-                          <option value="" selected="selected"> </option>
-                          <option value="Google Search">Google Search</option>
-                          <option value="Other Search Engine">Other Search Engine</option>
-                          <option value="Bridal Show">Bridal Show</option>
-                          <option value="Facebook/Instagram">Facebook/Instagram</option>
-                          <option value="The Knot">The Knot</option>
-                          <option value="WeddingWire.com">WeddingWire.com</option>
-                          <option value="Referred by a wedding/event planner">Referred by a wedding/event planner
-                          </option>
-                          <option value="Referred by a photographer">Referred by a photographer</option>
-                          <option value="Referred by an event venue/location">Referred by an event venue/location
-                          </option>
-                          <option value="Referred by someone else">Referred by someone else</option>
-                          <option value="Saw you at a wedding I attended">Saw you at a wedding I attended</option>
-                          <option value="Saw you at an event I attended">Saw you at an event I attended</option>
-                        </select>
-
-
-                      </div>
-
-
-                      <div id="frm_field_13607_container" class="form-field   frm_top_container">
-                        <label class="frm_pos_ frm_primary_label">How can we help you? (optional)
-                          <span class="frm_required"></span>
-                        </label>
-                        <textarea name="item_meta[13607]" id="message-input" rows="5"></textarea>
-
-
-                      </div>
-
-                      <br>
-                      <a href="/thank-you.html">
-                        <input id="submit-btn" type="submit" value="Request Quote Now" onclick="submitToAPI(event); requestedQuote()"
-                          style="width: 100%;">
-                      </a>
-
-
-                    </form>
-
-
-                  </div>
-                </div>
-                <!--End Right side-->
 
 
 
@@ -709,7 +485,7 @@
         //the value of the scr attribute of the image that is wrapped around the a element clicked by the user
        // $('#image-modal .modal-body img').attr('src', $(this).find('img').attr('src'));
        // $('#myModal .modal-body img').attr('id', $(this).find('img').attr('id'));
-       if($(this).find('img').attr('src') == "Images/Logos/darkBackgroundLogo.jpg")
+       if($(this).find('img').attr('src') == "Images/SmithPhotoStrip.png")
        {
         document.getElementById("modal-image").src = ($(this).find('img').attr('src'));
         document.getElementById("modalBodyTitle").innerHTML = "Hourly Rental Package Includes:";
