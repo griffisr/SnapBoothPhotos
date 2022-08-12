@@ -157,7 +157,7 @@
               <!--Header logo for scrolled nav bar-->
               <div class="col-sm-12 col-md-3 fl-page-logo-wrap">
                 <div class="fl-page-header-logo">
-                  <a href=""><img loading="false" data-no-lazy="1" class="fl-logo-img" itemscope itemtype="https://schema.org/ImageObject" src="Images/Logos/sbpLogoDark.png"  data-retina="Images/Logos/sbpLogo.png" title="" alt="Snap Booth Photos" /></a>
+                  <a href=""><img loading="false" data-no-lazy="1" class="fl-logo-img" itemscope itemtype="https://schema.org/ImageObject" src="Images/Logos/sbpLogoDark.png"  data-retina="Images/Logos/sbpLogo.png" title="" alt= "Photo Booth Near Me" /></a>
                 </div>
               </div>
       
@@ -168,19 +168,19 @@
       
                     <button src="Images/Logos/sbpLogo.png"type="button" class="navbar-toggle navbar-toggler" data-toggle="collapse" data-target=".fl-page-nav-collapse">
                       
-                      <span><i class="fa fa-bars" aria-hidden="true"></i><span class="sr-only"><img src="Images/Logos/sbpLogo.png"></img></span></span>
+                      <span><i class="fa fa-bars" aria-hidden="true"></i><span class="sr-only"><img src="Images/Logos/sbpLogo.png" alt= "Photo Booth Near Me"></img></span></span>
                     </button>
       
                     <div class="fl-page-nav-collapse collapse navbar-collapse">
                       <ul id="menu-maintop" class="nav navbar-nav navbar-right menu fl-theme-menu">
                         
-                        <li id="menu-item-24645" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="photo-booth-rental-guide.html" class="nav-link">Rental Guide</a></li>
+                        <li id="menu-item-24645" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="photo-booth-rental-guide.html" class="nav-link" title ="photo booth near me">Rental Guide</a></li>
       
-                        <li id="menu-item-24402" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24402 nav-item"><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                        <li id="menu-item-24402" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24402 nav-item"><a href="testimonials.html" class="nav-link" title ="photo booth near me">Testimonials</a></li>
       
                         <!--Dropdown-->
-                        <li id="menu-item-24404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="FAQs.html" class="nav-link">FAQs</a></li>
-                        <li id="menu-item-24403" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24403 nav-item"><a href="RatesAvailability.html" class="nav-link" >Request Quote</a></li>
+                        <li id="menu-item-24404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="FAQs.html" class="nav-link" title ="photo booth near me">FAQs</a></li>
+                        <li id="menu-item-24403" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24403 nav-item"><a href="RatesAvailability.html" class="nav-link" title ="photo booth near me">Request Quote</a></li>
                         </ul>							
                     </div>
                   </nav>
@@ -222,7 +222,7 @@
        
               <div class="col-sm-12 col-md-4 fl-page-header-logo-col">
                 <div class="fl-page-header-logo" itemscope="itemscope" itemtype="https://schema.org/Organization">
-                  <a href="index.html" itemprop="url"><img  src="Images/Logos/sbpLogo.png" title="" alt="Snap Booth Photos" style="width: 70%;"/></a>	
+                  <a href="index.html" itemprop="url"><img  src="Images/Logos/sbpLogo.png" title="" alt= "Photo Booth Near Me" style="width: 70%;"/></a>	
                 </div>
               </div>
       
@@ -233,18 +233,18 @@
                     <button type="button" class="navbar-toggle navbar-toggler" data-toggle="collapse" data-target=".fl-page-nav-collapse">
                       
                       <!--CHANGE THE HAMBURGER MENU ICON-->
-                      <span><span class="sr-only" style="position: relative;"><img src="Images/menu.png" style="height: 55px; width: auto;"></img></span>
+                      <span><span class="sr-only" style="position: relative;"><img src="Images/menu.png" style="height: 55px; width: auto;" alt= "Photo Booth Near Me"></img></span>
                     </button>
       
                     <div class="fl-page-nav-collapse collapse navbar-collapse">
                       <ul id="menu-maintop-1" class="nav navbar-nav navbar-right menu fl-theme-menu">
                         
                         
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="photo-booth-rental-guide.html" class="nav-link">Rental Guide</a></li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24402 nav-item"> <a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="photo-booth-rental-guide.html" class="nav-link" title ="photo booth near me">Rental Guide</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24402 nav-item"> <a href="testimonials.html" class="nav-link" title ="photo booth near me">Testimonials</a></li>
                                   <!--Dropdown-->
-                                  <li id="menu-item-24404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="FAQs.html" class="nav-link">FAQs</a></li>
-                                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24403 nav-item"><a href="RatesAvailability.html" class="nav-link" >Request Quote</a></li>
+                                  <li id="menu-item-24404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="FAQs.html" class="nav-link" title ="photo booth near me">FAQs</a></li>
+                                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24403 nav-item"><a href="RatesAvailability.html" class="nav-link" title ="photo booth near me" >Request Quote</a></li>
                                   </ul>							
                     </div>
                   </nav>

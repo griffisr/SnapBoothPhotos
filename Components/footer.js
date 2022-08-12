@@ -46,7 +46,7 @@
                                 <div class="fl-module-content fl-node-content">
                                 <div class="fl-rich-text">
     
-                                <h4>Reach Out</h4>
+                                <h4 title="Photo Booth Near Me">Reach Out</h4>
 
                                 <div class="fl-rich-text">
                                 <p>
@@ -105,12 +105,12 @@
                                   <div class="fl-rich-text">
             
                                     <!--Event Type Site Links-->
-                                    <h4>Event Types</h4>
+                                    <h4 title="Photo Booth Near Me">Event Types</h4>
                                     <ul>
-                                      <li><a href="Corporate-Rentals.html">Corporate Events</a></li>
-                                      <li><a href="Wedding-Rentals.html">Weddings</a></li>
-                                      <li><a href="Party-Rentals.html">Parties</a></li>
-                                      <li><a href="Graduation-Rentals.html">Graduation Parties</a></li>
+                                      <li><a href="Corporate-Rentals.html" title ="photo booth near me">Corporate Events</a></li>
+                                      <li><a href="Wedding-Rentals.html" title ="photo booth near me">Weddings</a></li>
+                                      <li><a href="Party-Rentals.html" title ="photo booth near me">Parties</a></li>
+                                      <li><a href="Graduation-Rentals.html" title ="photo booth near me">Graduation Parties</a></li>
                                       <li>Charity Functions</li>
                                       <li>Bar &amp; Bat Mitzvahs</li>
                                       <li>School Events &amp; Prom</li>
@@ -129,12 +129,12 @@
                                 <div class="fl-module-content fl-node-content">
                                   <div class="fl-rich-text">
                                     <!--Site Links-->
-                                    <h4>Links</h4>
+                                    <h4 title="Photo Booth Near Me">Links</h4>
                                     <ul>
-                                      <li><a href="/RatesAvailability.html">Contact</a></li>
-                                      <li> <a href="/FAQs.html">FAQ</a> </li>
-                                      <li> <a href="/photo-booth-rental-guide.html">Rental Guide</a> </li>
-                                      <li> <a href="/testimonials.html">Testimonials</a> </li>
+                                      <li><a href="/RatesAvailability.html" title ="photo booth near me">Contact</a></li>
+                                      <li> <a href="/FAQs.html" title ="photo booth near me">FAQ</a> </li>
+                                      <li> <a href="/photo-booth-rental-guide.html" title ="photo booth near me">Rental Guide</a> </li>
+                                      <li> <a href="/testimonials.html" title ="photo booth near me">Testimonials</a> </li>
                                     </ul>
                                   </div>
                                 </div>
@@ -152,25 +152,25 @@
                           <div class="fl-module fl-module-rich-text fl-node-59078ee664e3f" data-node="59078ee664e3f">
                             <div class="fl-module-content fl-node-content">
                               <div class="fl-rich-text">
-                                <h4 style="text-align: left">Surrounding Areas</h4>
+                                <h4 style="text-align: left" title="Photo Booth Near Me">Surrounding Areas</h4>
                                 <div id="header">
                                   <div id="subFooter">
                                     <div class="subFooterBkg">
                                       <div class="subShoe">
                                         <p>
                                         <span style="font-size: 14px">
-                                        <a href="Cities/photo-booth-ann-arbor.html">Ann Arbor</a> |
-                                        <a href="Cities/photo-booth-milan-mi.html">Milan</a> |
-                                        <a href="Cities/photo-booth-ypsilanti-mi.html">Ypsilanti</a> |
-                                        <a href="Cities/photo-booth-saline-mi.html">Saline</a> |
-                                        <a href="Cities/photo-booth-tecumseh-mi.html">Tecumseh</a> |
-                                        <a href="Cities/photo-booth-adrian-mi.html">Adrian</a> |
-                                        <a href="Cities/photo-booth-novi-mi.html">Novi</a> |                        
-                                        <a href="Cities/photo-booth-chelsea-mi.html">Chelsea</a> |
-                                        <a href="Cities/photo-booth-toledo-oh.html">Toledo</a> |
-                                        <a href="Cities/photo-booth-bryan-oh.html">Bryan</a> |
-                                        <a href="Cities/photo-booth-angola-in.html">Angola</a> |
-                                        <a href="Cities/photo-booth-fremont-in.html">Fremont</a> 
+                                        <a href="Cities/photo-booth-ann-arbor.html" title ="photo booth near me">Ann Arbor</a> |
+                                        <a href="Cities/photo-booth-milan-mi.html" title ="photo booth near me">Milan</a> |
+                                        <a href="Cities/photo-booth-ypsilanti-mi.html" title ="photo booth near me">Ypsilanti</a> |
+                                        <a href="Cities/photo-booth-saline-mi.html" title ="photo booth near me">Saline</a> |
+                                        <a href="Cities/photo-booth-tecumseh-mi.html" title ="photo booth near me">Tecumseh</a> |
+                                        <a href="Cities/photo-booth-adrian-mi.html" title ="photo booth near me">Adrian</a> |
+                                        <a href="Cities/photo-booth-novi-mi.html" title ="photo booth near me">Novi</a> |                        
+                                        <a href="Cities/photo-booth-chelsea-mi.html" title ="photo booth near me">Chelsea</a> |
+                                        <a href="Cities/photo-booth-toledo-oh.html" title ="photo booth near me">Toledo</a> |
+                                        <a href="Cities/photo-booth-bryan-oh.html" title ="photo booth near me">Bryan</a> |
+                                        <a href="Cities/photo-booth-angola-in.html" title ="photo booth near me">Angola</a> |
+                                        <a href="Cities/photo-booth-fremont-in.html" title ="photo booth near me">Fremont</a> 
                                       </span>
                                         </p>
                                       </div>

@@ -44,7 +44,7 @@ function requestedQuote () {
   firebase.analytics().logEvent('QUOTE_REQUESTED');
 }
 
-/* DETECTS WHEN A USER HAS SCROLLED MORE THAN HALF WAY DOWN A PAGE AND RECORDS [1] EVENT WHEN THEY'VE SCROLLED */
+/* DETECTS WHEN A USER HAS SCROLLED MORE THAN HALF WAY DOWN A PAGE AND RECORDS [1] EVENT WHEN THEY'VE SCROLLED 
 
 let scrolling = false;
 let notScrolled = true;
@@ -83,4 +83,7 @@ setInterval(() => {
     }
 },600);
 };
+*/
 /* ENDS SCROLLING DETECTIONS AND EVENT LOGGING*/
+
+
