@@ -1,0 +1,10 @@
+ 
+ .swiper{
+    width: 200px;
+ }
+  @media screen and (max-width: 1000px) {
+    body .heading {
+      margin: 9rem 3rem;
+      font-size: 6rem;
+    }
+  }

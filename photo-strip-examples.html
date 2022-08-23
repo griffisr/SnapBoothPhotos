@@ -10,12 +10,16 @@
 
  
 
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-  <link rel='stylesheet' type="text/css" href='CSS/price-cards.css' media='all' />
+  <link rel='stylesheet' type="text/css" href='CSS/photo-strip-cards.css' media='all' />
+  <link rel='stylesheet' type="text/css" href='CSS/photo-gallery.css' media='all' />
+  <link rel='stylesheet' type="text/css" href='CSS/FAQaccorion.css' media='all' />
 
   <link rel='stylesheet' id='wp-block-library-css' type="text/css"
     href='CSS/wp-includes/css/dist/block-library/style.min.css' media='all' />
@@ -40,9 +44,9 @@
     <script src='JS/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
 <script src='JS/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
 
-    <!--Initialize Firebase-->
+    <!--Initialize Firebase
   <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-analytics.js"></script> -->
 </head>
 
 
@@ -73,117 +77,442 @@
                 data-post-id="24290">
 
 
-                <!--header-->
-                <div class="fl-col-group fl-node-58eb15a01984e" data-node="58eb15a01984e">
-                  <div class="fl-col fl-node-58eb15a019bb7" data-node="58eb15a019bb7">
-                    <div class="fl-col-content fl-node-content">
-                      <div class="fl-module fl-module-heading fl-node-58eb15a0195c7" data-node="58eb15a0195c7">
-                        <div class="fl-module-content fl-node-content">
-                          <a href="#contact-form">
-                            <h1 class="fl-heading">
-                              <span class="fl-heading-text">
-                                Photo Strip Examples
-                              </span>
-                            </h1>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
+
+
+ <!--header-->
+ <div class="fl-col-group fl-node-58eb15a01984e" data-node="58eb15a01984e">
+  <div class="fl-col fl-node-58eb15a019bb7" data-node="58eb15a019bb7">
+    <div class="fl-col-content fl-node-content">
+      <div class="fl-module fl-module-heading fl-node-58eb15a0195c7" data-node="58eb15a0195c7">
+        <div class="fl-module-content fl-node-content">
+          <a href="#contact-form">
+            <h1 class="fl-heading">
+              <span class="fl-heading-text">
+                Photo Strip Examples
+              </span>
+            </h1>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ 
+          
+
+
+
+
+            
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title" id="modal-title">Modal Header</h3>
+                  </div>
+                  <div class="modal-body">
+                    <img class="img-responsive center-block modalImg" src="" alt="imgalt" id="modal-image" style=" border: 2px solid #555;">
+                    <br>
+                    
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                   </div>
                 </div>
 
+              </div>
+            </div>
 
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="fl-row fl-row-fixed-width fl-row-bg-none fl-node-58eb127f16ac7" data-node="58eb127f16ac7">
+                      <div class="fl-row-content-wrap">
+                        <div class="uabb-row-separator uabb-top-row-separator"></div>
+                          <div class="fl-row-content fl-row-fixed-width fl-node-content">
+
+                            <div class="fl-col-group fl-node-58eb127f35165" data-node="58eb127f35165">
+
+
+                              
+                              <div class="fl-col fl-node-58eb127f35513 fl-col-small" data-node="58eb127f35513">
+                                <div class="fl-col-content fl-node-content">
+                                  <div class="fl-module fl-module-pp-image fl-node-58eb128cd5144" data-node="58eb128cd5144">
+                                    <div class="fl-module-content fl-node-content">
+
+                                      <div class="pp-photo-container">
+                                        <div class="pp-photo pp-photo-align-center pp-photo-align-responsive-default" itemscope itemtype="http://schema.org/ImageObject">
+                                          <div class="pp-photo-content">
+                                            <div class="pp-photo-content-inner">
+                                         
+                                              
+                                              
+                            <!-- Swiper -->
+                            <div class="swiper mySwiper">
+                              <div class="swiper-wrapper">
+
+                                <div class="swiper-slide" style="width: 300px;">
+                                  <a href="#" class="thumbnail" style="border: none; width: 200px; height: 600px;">
+                                    <div class="card 2" data-toggle="modal" data-target="#myModal" style="border: none; width: 200px; height: 600px;">
+                                      <div class="card_image" style="border: none; width: 200px; height: 600px;">
+                                        <img id="wedding" src="Images/Photo Strips/4-pics-3rdThursday.png" style="border: none; width: 200px; height: 600px;" />
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+
+                                <div class="swiper-slide" style="width: 300px;">
+                                  <a href="#" class="thumbnail" style="border: none; width: 200px; height: 600px;">
+                                    <div class="card 2" data-toggle="modal" data-target="#myModal" style="border: none; width: 200px; height: 600px;">
+                                      <div class="card_image" style="border: none; width: 200px; height: 600px;">
+                                        <img id="wedding" src="Images/Photo Strips/3rdThursday.jpg" style="border: none; width: 200px; height: 600px;" />
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+
+                                <div class="swiper-slide" style="width: 300px;">
+                                  <a href="#" class="thumbnail" style="border: none; width: 200px; height: 600px;">
+                                    <div class="card 2" data-toggle="modal" data-target="#myModal" style="border: none; width: 200px; height: 600px;">
+                                      <div class="card_image" style="border: none; width: 200px; height: 600px;">
+                                        <img id="wedding" src="Images/Photo Strips/Photo Strip.png" style="border: none; width: 200px; height: 600px;" />
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+
+                                <div class="swiper-slide" style="width: 300px;">
+                                  <a href="#" class="thumbnail" style="border: none; width: 200px; height: 600px;">
+                                    <div class="card 2" data-toggle="modal" data-target="#myModal" style="border: none; width: 200px; height: 600px;">
+                                      <div class="card_image" style="border: none; width: 200px; height: 600px;">
+                                        <img id="wedding" src="Images/SmithPhotoStrip.png" style="border: none; width: 200px; height: 600px;" />
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+
+
+
+
+                              </div>
+                              <div class="swiper-button-next swiper-button-white" style="color: black;"></div>
+                              <div class="swiper-button-prev swiper-button-white" style="color: black;"></div>
+                            </div>
+
+
+
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              
+
+
+
+
+
+                              <div class="fl-col fl-node-58eb127f354c6" data-node="58eb127f354c6">
+                              <div class="fl-col-content fl-node-content">
+                                <div class="fl-module fl-module-callout fl-node-58eb115d1748d" data-node="58eb115d1748d">
+                                  <div class="fl-module-content fl-node-content">
+                                    <div class="fl-callout fl-callout-left">
+                                      <div class="fl-callout-content">
+
+                                        <h1 class="fl-callout-title" title="Photo Booth Near Me">
+                                          <a class="fl-callout-title-link fl-callout-title-text" title ="photo booth near me">
+                                            <span>
+                                              2X6 strips
+                                            </span>
+                                          </a>
+                                        </h1>
+
+                                        <div class="fl-callout-text-wrap">
+                                          <div class="fl-callout-text">
+                                            <p>
+                                              Navigating all of the dos and don'ts of renting a Photo Booth for your event can be stressful and difficult.
+                                              Luckily, we've put together a guide to help you pick the right booth for you.
+                                            </p>
+                                          </div>
+                                        </div>
+
+                                        <!-- <div class="fl-callout-button">
+                                          <div class="fl-button-wrap fl-button-width-auto">
+                                            <a href="/RatesAvailability.html" target="_self" class="fl-button" role="button">
+                                              <span class="fl-button-text">
+                                                REQUEST A FREE QUOTE NOW
+                                              </span>
+                                            </a>
+                                          </div>
+                                        </div>  -->
+                                        
+
+
+                                        <div class="fl-module fl-module-rich-text fl-node-58eb154784f51" data-node="58eb154784f51">
+                                          <div class="fl-module-content fl-node-content">
+                                        
+                          
+                                                <ul id="faqqs">
+                                                  <li>
+                                                    <input type="checkbox" checked>
+                                                    <i></i>
+                                                    <h2 title="Photo Booth Near Me">First Steps</h2>
+                                                    <p></p>
+                                                  <p><a href="http://snapboothphotos.com/RatesAvailability.html" title ="photo booth near me">Submit a request to see if the date of your event is available.</a> It's best to check availability even if you're in the early stages of planning as reservations are regularly booked.</p>
+                                                  </li>
+              
+                                                  <li>
+                                                    <input type="checkbox" checked>
+                                                    <i></i>
+                                                    <h2 title="Photo Booth Near Me">PICK YOUR PACKAGE & RECEIVE YOUR FREE QUOTE</h2>
+                                                    <p>Choose a package that's just right for your event! Decide how long you'd like your booth, choose your print style (classic 2X6 photo strips or 4X6 portraits), and add any add-ons!</p>
+                                                  </li>
+
+                                                </ul>
+                                              </div>
+                                            </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
 
 
                             
-                            <!-- Modal -->
-                            <div class="modal fade" id="myModal" role="dialog">
-                              <div class="modal-dialog">
 
-                                <!-- Modal content-->
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h3 class="modal-title" id="modal-title">Modal Header</h3>
-                                  </div>
-                                  <div class="modal-body">
-                                    <img class="img-responsive center-block modalImg" src="" alt="imgalt" id="modal-image" style=" border: 2px solid #555;">
-                                    <br>
-                                    
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+
+
+
+                    <div class="fl-row fl-row-fixed-width fl-row-bg-none fl-node-58eb127f16ac7" data-node="58eb127f16ac7">
+                      <div class="fl-row-content-wrap">
+                        <div class="uabb-row-separator uabb-top-row-separator"></div>
+                          <div class="fl-row-content fl-row-fixed-width fl-node-content">
+
+                            <div class="fl-col-group fl-node-58eb127f35165" data-node="58eb127f35165">
+
+
+                              
+
+
+                              
+
+
+
+
+                              <div class="fl-col fl-node-58eb127f35513 fl-col-small" data-node="58eb127f35513">
+                                <div class="fl-col-content fl-node-content">
+                                  <div class="fl-module fl-module-pp-image fl-node-58eb128cd5144" data-node="58eb128cd5144">
+                                    <div class="fl-module-content fl-node-content">
+  
+                                      <div class="pp-photo-container">
+                                        <div class="pp-photo pp-photo-align-center pp-photo-align-responsive-default" itemscope itemtype="http://schema.org/ImageObject">
+                                          <div class="pp-photo-content">
+                                            <div class="pp-photo-content-inner">
+                                              
+                            <!-- Swiper -->
+                            <div class="swiper mySwiper" style="width: 300px;">
+                              <div class="swiper-wrapper">
+                                <div class="swiper-slide" style="width: 600px;"><img src="Images/Photo Strips/4x6/1 pic layout 4X6.png" style="width: 600px; "></div>
+                              <div class="swiper-slide" style="width: 600px;"><img src="Images/Photo Strips/4x6/1 pic layout 4X6.png" style="width: 600px;"></div>
+                              <div class="swiper-slide" style="width: 600px;"><img src="Images/Photo Strips/4x6/1 pic layout 4X6.png" style="width: 600px;"></div>
+                              <div class="swiper-slide" style="width: 600px;"><img src="Images/Photo Strips/4x6/1 pic layout 4X6.png" style="width: 600px;"></div>
+                              <div class="swiper-slide" style="width: 600px;"><img src="Images/Photo Strips/4x6/1 pic layout 4X6.png" style="width: 600px;"></div>
+                              </div>
+                              <div class="swiper-button-next swiper-button-white" style="color: black;"></div>
+                              <div class="swiper-button-prev swiper-button-white" style="color: black;"></div>
+                            </div>
+  
+  
+  
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      
+                                    </div>
                                   </div>
                                 </div>
+                              </div>
 
+                              <div class="fl-col fl-node-58eb127f354c6" data-node="58eb127f354c6">
+                              <div class="fl-col-content fl-node-content">
+                                <div class="fl-module fl-module-callout fl-node-58eb115d1748d" data-node="58eb115d1748d">
+                                  <div class="fl-module-content fl-node-content">
+                                    <div class="fl-callout fl-callout-left">
+                                      <div class="fl-callout-content">
+
+                                        <h1 class="fl-callout-title" title="Photo Booth Near Me">
+                                          <a class="fl-callout-title-link fl-callout-title-text" title ="photo booth near me">
+                                            <span>
+                                              Photo Booth Rental Guide
+                                            </span>
+                                          </a>
+                                        </h1>
+
+                                        <div class="fl-callout-text-wrap">
+                                          <div class="fl-callout-text">
+                                            <p>
+                                              Navigating all of the dos and don'ts of renting a Photo Booth for your event can be stressful and difficult.
+                                              Luckily, we've put together a guide to help you pick the right booth for you.
+                                            </p>
+                                          </div>
+                                        </div>
+
+                                        <!-- <div class="fl-callout-button">
+                                          <div class="fl-button-wrap fl-button-width-auto">
+                                            <a href="/RatesAvailability.html" target="_self" class="fl-button" role="button">
+                                              <span class="fl-button-text">
+                                                REQUEST A FREE QUOTE NOW
+                                              </span>
+                                            </a>
+                                          </div>
+                                        </div>  -->
+                                        
+
+
+                                        <div class="fl-module fl-module-rich-text fl-node-58eb154784f51" data-node="58eb154784f51">
+                                          <div class="fl-module-content fl-node-content">
+                                        
+                          
+                                                <ul id="faqqs">
+                                                  <li>
+                                                    <input type="checkbox" checked>
+                                                    <i></i>
+                                                    <h2 title="Photo Booth Near Me">First Steps</h2>
+                                                    <p></p>
+                                                  <p><a href="http://snapboothphotos.com/RatesAvailability.html" title ="photo booth near me">Submit a request to see if the date of your event is available.</a> It's best to check availability even if you're in the early stages of planning as reservations are regularly booked.</p>
+                                                  </li>
+              
+                                                  <li>
+                                                    <input type="checkbox" checked>
+                                                    <i></i>
+                                                    <h2 title="Photo Booth Near Me">PICK YOUR PACKAGE & RECEIVE YOUR FREE QUOTE</h2>
+                                                    <p>Choose a package that's just right for your event! Decide how long you'd like your booth, choose your print style (classic 2X6 photo strips or 4X6 portraits), and add any add-ons!</p>
+                                                  </li>
+              
+                                                  <li>
+                                                    <input type="checkbox" checked>
+                                                    <i></i>
+                                                    <h2 title="Photo Booth Near Me">RESERVE YOUR BOOTH</h2>
+                                                    <p>Once you've picked your package and decided the details of your event, we'll put everything in writing for you to reserve your booth with a deposit and signed contract.</p>
+                                                  </li>
+              
+
+                                                  <li>
+                                                    <input type="checkbox" checked>
+                                                    <i></i>
+                                                    <h2 title="Photo Booth Near Me">CUSTOMIZE CUSTOMIZE CUSTOMIZE</h2>
+                                                    <p>After your booth is reserved, we'll work with you to create your entirely custom experience. From designing a personalized logo for your prints, to custom screens for your booth, Snap Booth Photos does it all to ensure your photo booth eperience is top notch!</p>
+                                                  </li>
+
+                                                </ul>
+                                              </div>
+                                            </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
                             </div>
 
-                            <div class="cards-list">
 
-                              <a href="#" class="thumbnail" style="border: none; width: 200px; height: 600px;">
-                                <div class="card 1" data-toggle="modal" data-target="#myModal" style="border: none; width: 200px; height: 600px;">
-                                  <div class="card_image" style="border: none; width: 200px; height: 600px;">
-                                    <img id="wedding" src="Images/SmithPhotoStrip.png" style="border: none; width: 200px; height: 600px;"/>
-                                  </div>
-                                  <div class="card_title title-white">
-                                    <p style="font-size: 15px;">HOURLY</p>
-                                  </div>
-                                </div>
 
-                              </a>
-                              
 
-                              <a href="#" class="thumbnail" style="border: none; width: 200px; height: 600px;">
-                                <div class="card 2" data-toggle="modal" data-target="#myModal" style="border: none; width: 200px; height: 600px;">
-                                  <div class="card_image" style="border: none; width: 200px; height: 600px;">
-                                    <img id="wedding" src="Images/Photo Strip2.png"  style="border: none; width: 200px; height: 600px;"/>
-                                  </div>
-                                  <div class="card_title title-white">
-                                    <p style="font-size: 15px;">ALL INCLUSIVE</p>
-                                  </div>
-                                </div>
-                              </a>
 
-                              <a href="#" class="thumbnail" style="border: none; width: 200px; height: 600px;">
-                                <div class="card 2" data-toggle="modal" data-target="#myModal" style="border: none; width: 200px; height: 600px;">
-                                  <div class="card_image" style="border: none; width: 200px; height: 600px;">
-                                    <img id="wedding" src="Images/Photo Strip.png" style="border: none; width: 200px; height: 600px;" />
-                                  </div>
-                                  <div class="card_title title-white">
-                                    <p style="font-size: 15px; color: black;">ALL INCLUSIVE</p>
-                                  </div>
-                                </div>
-                              </a>
 
-                              <a href="#" class="thumbnail" style="border: none; width: 200px; height: 600px;">
-                                <div class="card 2" data-toggle="modal" data-target="#myModal" style="border: none; width: 200px; height: 600px;">
-                                  <div class="card_image" style="border: none; width: 200px; height: 600px;">
-                                    <img id="wedding" src="Images/Photo Strip2.png" style="border: none; width: 200px; height: 600px;" />
-                                  </div>
-                                  <div class="card_title title-white">
-                                    <p style="font-size: 15px;" >ALL INCLUSIVE</p>
-                                  </div>
-                                </div>
-                              </a>
-                              
+                           
 
-                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
 
 
 
 
 
-                            <div class="fl-callout-text-wrap" style="padding-top: 20px;">
-                              <div class="fl-callout-text">
-                                <p>
-                                  With rental packages as low as <em>$400</em>, no matter what your budget, Snap Booth Photos is sure to create memories your guests will never forget.
-                                  Our upgrades and customizations allow you to create the perfect photo booth for any event!
-                                  <br><em>(Click on our package options above to find out more!)</em>
-                                </p>
-                              </div>
-                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="fl-callout-text-wrap" style="padding-top: 60px;">
+                      <div class="fl-callout-text">
+                        <p>
+                          With rental packages as low as <em>$400</em>, no matter what your budget, Snap Booth Photos is sure to create memories your guests will never forget.
+                          Our upgrades and customizations allow you to create the perfect photo booth for any event!
+                          <br><em>(Click on our package options above to find out more!)</em>
+                        </p>
+                      </div>
+                    </div>
+
+
+
+
+               
 
 
 
@@ -467,52 +796,22 @@
 
 
 
-  <script> 
 
-
-
-
-
-    // Add the following script before the closing body tag
-    // After loading the DOM tree (page)
-    $(function () {
-      //when clicking on a link containing a Thumbnail
-      $('a.thumbnail').click(function (e) {
-        console.log($(this).find('img').attr('src'))
-        //cancel the default browser action
-        e.preventDefault();
-        //set the scr attribute of the modal's img element
-        //the value of the scr attribute of the image that is wrapped around the a element clicked by the user
-       // $('#image-modal .modal-body img').attr('src', $(this).find('img').attr('src'));
-       // $('#myModal .modal-body img').attr('id', $(this).find('img').attr('id'));
-       if($(this).find('img').attr('src') == "Images/SmithPhotoStrip.png")
-       {
-        document.getElementById("modal-image").src = ($(this).find('img').attr('src'));
-        document.getElementById("modalBodyTitle").innerHTML = "Hourly Rental Package Includes:";
-        document.getElementById("modalBodyText").innerHTML = "Hourly photo booth rentals are perfect for shorter events with a clear start and end time. <em>(i.e.: Birthdays, Graduation Open House, Corporate Parties, etc...)</em> Hourly rates vary depending on the size of your event so reach out today for your free quote!";
-        document.getElementById("modal-title").innerHTML = "Photo Booth Rental by the hour";
-
-       }
-       else if($(this).find('img').attr('src') == "Images/Promo/Setup.jpg")
-       {
-        document.getElementById("modal-image").src = ($(this).find('img').attr('src'));
-        document.getElementById("modalBodyTitle").innerHTML = "All Inclusive Rental includes:"
-        document.getElementById("includedPackage").innerHTML = "&#9900;•Photo Booth rental included for your entire event with unlimted prints for your guests";
-        document.getElementById("modalBodyText").innerHTML = "Our all inclusive package is ideal for longer events <em>(4+ hours)</em> where you don't want to worry about running out of time with your booth! This package is also perfect for longer events that may have down time where your guests aren't necessarily taking photos the entire time.<br><em>(i.e.: During your Wedding ceremeony, during dinner, etc...)</em>";
-        document.getElementById("modal-title").innerHTML = "All Inclusive Photo Booth Rental";
-        
-       }
-    
-
-      });
-    })
-
-  
-  </script>
 
 
   <!--**************************FIREBASE CONFIG******************************************************-->
   <script src='JS/Firebase/analytics.js'></script>
+
+
+
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src='JS/strip-swiper.js'></script>
+
+
+
+  
 
   
 
