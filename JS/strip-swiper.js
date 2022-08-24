@@ -47,6 +47,7 @@ const swiper = new Swiper(".mySwiper", {
           //the value of the scr attribute of the image that is wrapped around the a element clicked by the user
          // $('#image-modal .modal-body img').attr('src', $(this).find('img').attr('src'));
          // $('#myModal .modal-body img').attr('id', $(this).find('img').attr('id'));
+         document.getElementById("modal-image").src = ($(this).find('img').attr('src'));
          if($(this).find('img').attr('src') == "Images/SmithPhotoStrip.png")
          {
           document.getElementById("modal-image").src = ($(this).find('img').attr('src'));
