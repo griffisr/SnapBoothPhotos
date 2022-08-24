@@ -66,11 +66,14 @@ body {
   background-image: url("https://s3.us-east-2.amazonaws.com/snapboothphotos.com/Images/Photo+Strips/Photo+Strip.png");
 }
 .sl-img-3 {
-  background-image: url("https://s3.us-east-2.amazonaws.com/snapboothphotos.com/Images/Photo+Strips/3rdThursday.jpg");
+  background-image: url("https://s3.us-east-2.amazonaws.com/snapboothphotos.com/Images/Photo+Strips/4-pics-3rdThursday.png");
 }
+.sl-img-7 {
+  background-image: url("https://s3.us-east-2.amazonaws.com/snapboothphotos.com/Images/SmithPhotoStrip.png");
+}
+
 .sl-img-4 {
   background-image: url("https://s3.us-east-2.amazonaws.com/snapboothphotos.com/Images/Photo+Strips/4x6/1+pic+center+layout+4X6.png");
-  background-size:auto;
 }
 .sl-img-5 {
   background-image: url("https://s3.us-east-2.amazonaws.com/snapboothphotos.com/Images/Photo+Strips/4x6/1+pic+layout+4X6.png");
