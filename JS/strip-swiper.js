@@ -6,6 +6,7 @@ $(document).ready(function() {
     //initialize swiper when document ready
     var mySwiper = new Swiper(".swiper-container", {
       // Navigation arrows
+      autoplay: true,
       loop: true,
       navigation: {
           nextEl: '.swiper-button-next',
@@ -177,7 +178,7 @@ $(document).ready(function() {
 
   const landscapeswiper = new Swiper(".newSwiper", {
     loop: true,
-    autoplay: false,
+    autoplay: true,
     navigation: {
         nextEl: '.swiper-button-next-46',
         prevEl: '.swiper-button-prev-46',
