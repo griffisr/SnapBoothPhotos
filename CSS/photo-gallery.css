@@ -2,6 +2,10 @@
  .swiper{
     width: 200px;
  }
+
+ .large-paragraph{
+    font-size: 1.5em;
+ }
   @media screen and (max-width: 1000px) {
     body .heading {
       margin: 9rem 3rem;
