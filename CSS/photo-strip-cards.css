@@ -193,6 +193,10 @@ body {
   /* Swiper: 320
 	/*-------------------------------------------------------*/
 
+  .swiper-4x6{
+    width: 98%;
+  }
+
   /*   VERY IMPORTANT. CHANGES PHOTO STRIP WIDTH AND CONTENTS ON SMALL SCREENS  */
   .swiper-container {
     width: 60%;
@@ -454,8 +458,9 @@ body {
 @media only screen and (min-width: 1024px) {
   /* 1024 */
   .swiper-4x6{
-    width: 600px;
+    width: 50%;
   }
+
   /*-------------------------------------------------------*/
   /* Main Wrapper: 1024
 	/*-------------------------------------------------------*/
