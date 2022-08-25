@@ -7,7 +7,7 @@ $(document).ready(function() {
     var mySwiper = new Swiper(".swiper-container", {
       // Navigation arrows
       autoplay: {
-        delay: 5000,
+        delay: 3000,
       },
       loop: true,
       navigation: {
