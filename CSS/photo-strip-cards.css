@@ -486,9 +486,7 @@ body {
     display: inline-block;
     float: left;
   }
-  .bottom-header{
-    width: 250px;
-  }
+
   .sl-header-wrapper p {
     width: 100%;
   }
@@ -533,9 +531,7 @@ body {
 }
 @media only screen and (min-width: 1240px) {
   /* 1240 */
-  .bottom-header{
-    width: 350px;
-  }
+
 }
 @media only screen and (min-width: 1440px) {
   /* 1440 */
@@ -549,9 +545,7 @@ body {
   .swiper-container {
     width: 60%;
   }
-  .bottom-header{
-    width: 450px;
-  }
+
 }
 @media only screen and (min-width: 1662px) {
   /* 1662px */

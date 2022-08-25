@@ -10,6 +10,8 @@ $(document).ready(function() {
         delay: 3000,
       },
       loop: true,
+      loopAdditionalSlides: 5,
+      initialSlide: 4,
       navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
