@@ -4,8 +4,45 @@
  }
 
  .large-paragraph{
-    font-size: 1.5em;
+    font-size: 1.3em;
  }
+
+
+
+.strip-title{
+  
+
+    font-size: 17px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    position: relative;
+    max-height: 800px;
+    opacity: 1;
+    transform: translate(0, 0);
+    margin-top: 14px;
+    z-index: 2;
+  
+}
+
+.text-background{
+  background-color: rgba(255, 255, 255, 0.693);
+  font-size: 17px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  position: relative;
+  max-height: 800px;
+  opacity: 1;
+  transform: translate(0, 0);
+  margin-top: 14px;
+  z-index: 2;
+
+}
+
+.gallery-2x6{
+}
+
+
+
   @media screen and (max-width: 1000px) {
     body .heading {
       margin: 9rem 3rem;

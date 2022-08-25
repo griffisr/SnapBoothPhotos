@@ -129,6 +129,9 @@ body {
 @media only screen and (min-width: 320px) {
   /* 320px */
 
+  .sl-wrapper{
+    overflow: hidden;
+  }
   /*-------------------------------------------------------*/
   /* SL Header: 320
 	/*-------------------------------------------------------*/
@@ -442,7 +445,11 @@ body {
     background-position: center 185px;
   }
 }
-/*    Desktop    */
+
+
+
+
+/**********************************    Desktop    ***************************************/
 
 @media only screen and (min-width: 1024px) {
   /* 1024 */
@@ -452,10 +459,16 @@ body {
   /*-------------------------------------------------------*/
   /* Main Wrapper: 1024
 	/*-------------------------------------------------------*/
+
+
+
+
+
+
   .sl-wrapper {
     position: relative;
     height: 540px;
-    overflow: hidden;
+   overflow: visible;
   }
   /*-------------------------------------------------------*/
   /* SL Main Container: 1024

@@ -314,3 +314,35 @@
                         </div>
                       </div>
                     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                    <li>
+                                                      <input type="checkbox" checked>
+                                                      <i></i>
+                                                      <h2 title="Photo Booth Near Me">CUSTOMIZE CUSTOMIZE CUSTOMIZE</h2>
+                                                      <p>After your booth is reserved, we'll work with you to create your entirely custom experience. From designing a personalized logo for your prints, to custom screens for your booth, Snap Booth Photos does it all to ensure your photo booth eperience is top notch!</p>
+                                                    </li>
+
+
+
+
+
+
+
+                                                    
