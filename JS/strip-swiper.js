@@ -10,7 +10,7 @@ $(document).ready(function() {
         delay: 1,
         disableOnInteraction: false
       },
-      speed: 2500,
+      speed: 8000,
       loop: true,
       loopAdditionalSlides: 5,
       initialSlide: 4,
