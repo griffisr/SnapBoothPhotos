@@ -3,6 +3,10 @@
  .large-paragraph{
     font-size: 1.3em;
  }
+ .x-large-paragraph{
+  font-size: 1.4em;
+  line-height: 1.3;
+}
 
 
 
