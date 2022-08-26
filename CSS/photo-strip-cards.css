@@ -332,6 +332,7 @@ body {
   /* Card Bkg Img: 375
 	/*-------------------------------------------------------*/
 
+
   .sl-gradient {
     background-position: center 300px;
   }
@@ -369,6 +370,14 @@ body {
 }
 @media only screen and (min-width: 414px) {
   /* 414 */
+
+
+  .sl-wrapper{
+    width: 95vw;
+  }
+
+
+
   /*-------------------------------------------------------*/
   /* SL Header: 414
 	/*-------------------------------------------------------*/
@@ -388,16 +397,28 @@ body {
     transform: translate(0, 495px);
   }
 }
-@media only screen and (min-width: 568px) {
-  /* 568 */
+@media only screen and (min-width: 490px) {
+  /* 490 */
+  .sl-wrapper{
+    width: 85vw;
+  }
 }
-@media only screen and (min-width: 667px) {
+@media only screen and (min-width: 528px) {
+  /* 568 */
+  .sl-wrapper{
+    width: 80vw;
+  }
+}
+@media only screen and (min-width: 607px) {
   /* 667px */
+  .sl-wrapper{
+    width: 75vw;
+  }
 }
 @media only screen and (min-width: 736px) {
   /* 736px */
 }
-/*Tablet*/
+/**********************************    Tablet    ***************************************/
 
 @media only screen and (min-width: 768px) {
   /* 768 */
@@ -429,7 +450,7 @@ body {
   /* Swiper: 768
 	/*-------------------------------------------------------*/
   .swiper-container {
-    width: 55%;
+    width: 65%;
   }
 
   /*-------------------------------------------------------*/
@@ -478,7 +499,8 @@ body {
 
 
   .sl-wrapper {
-    position: relative;
+    width: 70vw;
+
   
   }
   /*-------------------------------------------------------*/
@@ -517,7 +539,7 @@ body {
     top: 50%;
     right: 0;
     transform: translate(-80%, -50%);
-    width: 60%;
+    width: 70%;
     height: 540px;
   }
   .swiper-button-next,
@@ -525,8 +547,6 @@ body {
     display: block;
   }
 
-  .sl-main-container {
-  }
 
   /*-------------------------------------------------------*/
   /* Prev/Next Slide Cover: 1024
@@ -538,23 +558,35 @@ body {
 }
 @media only screen and (min-width: 1140px) {
   /* 1140 */
+  .sl-wrapper{
+    width: 50vw;
+  }
 }
 @media only screen and (min-width: 1240px) {
   /* 1240 */
+  .sl-wrapper{
+    width: 40vw;
+  }
+
+}
+@media only screen and (min-width: 1320px) {
+  /* 1240 */
+  .sl-wrapper{
+    width: 35vw;
+  }
 
 }
 @media only screen and (min-width: 1440px) {
   /* 1440 */
-  /*-------------------------------------------------------*/
-  /* Slide Layout: 1024
-	/*-------------------------------------------------------*/
+
+  .sl-wrapper{
+    width: 100vw;
+  }
   .sl-main-container {
+    width: 1640px;
    
   }
-  .sl-wrapper,
-  .swiper-container {
-    width: 60%;
-  }
+  
 
 }
 @media only screen and (min-width: 1662px) {
@@ -579,20 +611,6 @@ body {
 /*---------------- -------/---\------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 html {
