@@ -479,8 +479,7 @@ body {
 
   .sl-wrapper {
     position: relative;
-    height: 540px;
-   overflow: visible;
+  
   }
   /*-------------------------------------------------------*/
   /* SL Main Container: 1024
@@ -509,7 +508,7 @@ body {
 	/*-------------------------------------------------------*/
   .sl-wrapper {
     height: 540px;
-    width: 45%;
+    overflow: visible;
     display: inline-block;
   }
 
@@ -527,7 +526,6 @@ body {
   }
 
   .sl-main-container {
-    width: 1024px;
   }
 
   /*-------------------------------------------------------*/
@@ -551,7 +549,7 @@ body {
   /* Slide Layout: 1024
 	/*-------------------------------------------------------*/
   .sl-main-container {
-    width: 1440px;
+   
   }
   .sl-wrapper,
   .swiper-container {
