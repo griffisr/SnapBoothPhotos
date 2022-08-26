@@ -7,8 +7,9 @@ $(document).ready(function() {
     var mySwiper = new Swiper(".swiper-container", {
       // Navigation arrows
       autoplay: {
-        delay: 2000,
+        delay: 1,
       },
+      speed: 1000,
       loop: true,
       loopAdditionalSlides: 5,
       initialSlide: 4,
@@ -185,7 +186,6 @@ $(document).ready(function() {
     autoplay: {
       delay: 4000,
     } ,
-    effect: 'fade',
     navigation: {
         nextEl: '.swiper-button-next-46',
         prevEl: '.swiper-button-prev-46',
