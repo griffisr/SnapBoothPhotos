@@ -133,7 +133,8 @@ body {
   /* 320px */
 
   .sl-wrapper{
-    overflow: hidden;
+    overflow: visible;
+    width: 100vw;
   }
   /*-------------------------------------------------------*/
   /* SL Header: 320
@@ -202,7 +203,7 @@ body {
 
   /*   VERY IMPORTANT. CHANGES PHOTO STRIP WIDTH AND CONTENTS ON SMALL SCREENS  */
   .swiper-container {
-    width: 60%;
+    width: 55%;
     height: 100%;
   }
   .swiper-button-next,
@@ -417,11 +418,11 @@ body {
     padding: 0 5%;
   }
   .sl-header-wrapper h3 {
-    width: 300px;
+    width: 100%;
     font-size: 65px;
   }
   .sl-header-wrapper p {
-    width: 605px;
+    width: 40vw;
   }
 
   /*-------------------------------------------------------*/
