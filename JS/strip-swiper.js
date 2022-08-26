@@ -8,8 +8,9 @@ $(document).ready(function() {
       // Navigation arrows
       autoplay: {
         delay: 1,
+        disableOnInteraction: false
       },
-      speed: 1000,
+      speed: 2500,
       loop: true,
       loopAdditionalSlides: 5,
       initialSlide: 4,

@@ -12,6 +12,9 @@ body {
   max-width: 1662px;
   margin: 0 auto;
 }
+.swiper-container > .swiper-wrapper{
+  transition-timing-function : linear;
+}
 .swiper-button-next-46{
   width:32px;
 
@@ -166,7 +169,7 @@ body {
   .swiper-slide-prev .slide-cover,
   .swiper-slide-next .slide-cover,
   .slide-cover {
-    background-color: #ffffff;
+
     height: 100%;
     width: 100%;
     position: absolute;
@@ -184,7 +187,7 @@ body {
     transition: visibility 0s 0.5s, opacity 300ms;
     height: 100%;
     width: 100%;
-    background-color: #ffffff;
+
     z-index: 2;
     visibility: hidden;
   }
@@ -460,6 +463,7 @@ body {
 @media only screen and (min-width: 1024px) {
   /* 1024 */
   .swiper-4x6{
+    margin-left: 0;
     width:47%;
   }
 
