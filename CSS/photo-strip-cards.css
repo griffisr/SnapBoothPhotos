@@ -133,7 +133,8 @@ body {
   /* 320px */
 
   .sl-wrapper{
-    overflow: hidden;
+    overflow: visible;
+    width: 100vw;
   }
   /*-------------------------------------------------------*/
   /* SL Header: 320
@@ -202,7 +203,7 @@ body {
 
   /*   VERY IMPORTANT. CHANGES PHOTO STRIP WIDTH AND CONTENTS ON SMALL SCREENS  */
   .swiper-container {
-    width: 60%;
+    width: 55%;
     height: 100%;
   }
   .swiper-button-next,
@@ -417,11 +418,11 @@ body {
     padding: 0 5%;
   }
   .sl-header-wrapper h3 {
-    width: 300px;
+    width: 100%;
     font-size: 65px;
   }
   .sl-header-wrapper p {
-    width: 605px;
+    width: 40vw;
   }
 
   /*-------------------------------------------------------*/
@@ -478,8 +479,7 @@ body {
 
   .sl-wrapper {
     position: relative;
-    height: 540px;
-   overflow: visible;
+  
   }
   /*-------------------------------------------------------*/
   /* SL Main Container: 1024
@@ -508,7 +508,7 @@ body {
 	/*-------------------------------------------------------*/
   .sl-wrapper {
     height: 540px;
-    width: 45%;
+    overflow: visible;
     display: inline-block;
   }
 
@@ -526,7 +526,6 @@ body {
   }
 
   .sl-main-container {
-    width: 1024px;
   }
 
   /*-------------------------------------------------------*/
@@ -550,7 +549,7 @@ body {
   /* Slide Layout: 1024
 	/*-------------------------------------------------------*/
   .sl-main-container {
-    width: 1440px;
+   
   }
   .sl-wrapper,
   .swiper-container {

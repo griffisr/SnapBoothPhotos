@@ -6,20 +6,6 @@
 
 
 
-.strip-title{
-  
-
-    font-size: 17px;
-    line-height: 26px;
-    letter-spacing: 1px;
-    position: relative;
-    max-height: 800px;
-    opacity: 1;
-    transform: translate(0, 0);
-    margin-top: 14px;
-    z-index: 2;
-  
-}
 
 .text-background{
   background-color: rgba(255, 255, 255, 0.849);
@@ -30,10 +16,10 @@
   max-height: 800px;
   opacity: 1;
   transform: translate(0, 0);
-  margin-top: 14px;
   z-index: 2;
   margin-top: 60px;
   padding: 25px;
+  margin-left: 2vw;
 
 
 }
