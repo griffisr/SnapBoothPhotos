@@ -10,7 +10,7 @@ body {
   font-family: "Rubik", sans-serif;
 }
 .main-wrapper {
-  max-width: 1662px;
+
   margin: 0 auto;
 }
 .swiper-container > .swiper-wrapper{
@@ -610,6 +610,10 @@ body {
 }
 @media only screen and (min-width: 1662px) {
   /* 1662px */
+  .sl-main-container {
+    width: 2040px;
+   
+  }
 }
 
 
