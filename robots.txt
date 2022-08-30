@@ -1,3 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /Unpublished Pages*
+
+
+
+Sitemap: http://snapboothphotos.com/sitemap.xml

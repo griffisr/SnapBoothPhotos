@@ -222,7 +222,7 @@
        
               <div class="col-sm-12 col-md-4 fl-page-header-logo-col">
                 <div class="fl-page-header-logo" itemscope="itemscope" itemtype="https://schema.org/Organization">
-                  <a href="index.html" itemprop="url"><img  src="Images/Logos/sbpLogo.png" title="" alt= "Photo Booth Near Me" style="width: 70%;"/></a>	
+                  <a href="http://snapboothphotos.com/" itemprop="url"><img  src="Images/Logos/sbpLogo.png" title="" alt= "Photo Booth Near Me" style="width: 70%;"/></a>	
                 </div>
               </div>
       
